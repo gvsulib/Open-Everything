@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
 	<title>Open Everything Interaction Wireframe</title>
-	
-	
-	<style>
+<link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>	<style>
 	
 	/* http://meyerweb.com/eric/tools/css/reset/ 
 	   v2.0 | 20110126
@@ -54,7 +52,52 @@
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
-
+	
+	body {
+		font-family: 'Open Sans', sans-serif;
+	}
+	
+	p {
+		font-size: 1em;
+		line-height: 1.4em;
+		margin: .65em 0;
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-family: Lato, sans-serif;
+	}
+	
+	h1, h2 {
+		text-transform: uppercase;
+	}
+	
+	h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+		font-weight: bold;
+	}
+	
+	h1 {
+		font-size: 6.5em;
+		padding: .5em 0;
+	}
+	
+	h2 {
+		font-size: 2.5em;
+		padding: .7em 0;
+		line-height: 1.2em;
+	}
+	
+	h3 {
+		font-weight: bold;
+		font-size: 1.8em;
+		padding: .8em 0;
+	}
+	
+	.allcaps {
+		font-family: Lato, sans-serif;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1.5em;
+	}
 	/* Grid styles : Based on Nicole Sullivan's OOCSS grids */
 
 	.line{overflow:hidden;*overflow:visible;*zoom:1;clear:both;}
@@ -91,21 +134,40 @@
 	.oe-blue { background-color: #2aace3; }
 	.oe-green { background-color: #2bb673; }
 	.oe-purple { background-color: #2e3192; }
+	
+	.introquestion { width: 102%; margin-left: -1%; padding: 1em 2%; text-align: center;}
 	</style>
 </head>
 
 <body>
 
 <article id="intro" class="oe-panel oe-purple">
-	<h1>Open Everything</h1>
+	<h1><span>Open</span> <br />Everything</h1>
 	
-	<p>This is a demonstration of how the Open Everything Exhibition could transfer to an online, interactive space.</p>
+	<div class="introquestion oe-blue">
+		<h2>How much did <span>you</span> pay for <span>textbooks</span>?</h2>
+	</div>
 	
-	<p class="center"><a class="lib-button-small-grey nextpanel" href="#access">View the Exhibit</a></p>
+	<h3>Information is a commodity.</h3>
+	
+	<p>Just like any other commodity, it can be bought and sold. Quality information costs time and money to produce, and those who produce it often limit access to recover costs and make a profit.</p>
+	
+	<h3>Information is also a public good.</h3>
+	
+	<p>Producing information will always come at a price, but limiting access to it can impede the advancement of knowledge, slow down innovation, and stunt scientific and social progress.</p>
+	
+	<h3>Open information can change this.</h3>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+	
+	<p><br /><span class="allcaps">Open Everything</span> encourages you to explore the power of Open Access, Open Data, Open Textbooks, and Open Software, and to contemplate the tension between information as a commodity and information as a public good.</p>
+	
+	<!--p class="center"><a class="lib-button-small-grey nextpanel" href="#access">View the Exhibit</a></p-->
 </article>
 
 <article id="access" class="oe-panel oe-orange">
-	<h2>Open Access</h2>
+	<h1><span>Open</span> <br />Access</h1>
 	
 	<p><em>This is a one sentence blurb definition about whatever the topic is.</em></p>
 	
