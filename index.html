@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Open Everything Interaction Wireframe</title>
+	
+	
+	<style>
+	
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+
+	/* Grid styles : Based on Nicole Sullivan's OOCSS grids */
+
+	.line{overflow:hidden;*overflow:visible;*zoom:1;clear:both;}
+	.span1{width:99%;}
+	.span2,.span3,.span4,.span2of3,.span3of4{width:99%;}
+	.unit{padding:.5em 0;}
+	.left,
+	.right{float:none;}
+
+	@media screen and (min-width: 450px) {
+	.span4{width:49%;padding:.5em 1% .5em 0;}	
+	.left{float:left;}
+	.right{float:right;}
+	}
+
+	@media screen and (min-width:550px) {
+	.span3{width:32%;padding:.5em 1% .5em 0;}
+	.span2of3{width:65%;padding:.5em 1% .5em 0;}
+	}
+
+	@media screen and (min-width:900px) {
+
+	.span2{width:49%;padding:.5em 1% .5em 0;}
+	.span4{width:24%;}
+	.span3of4{width:74%;padding:.5em 1% .5em 0;}
+	}
+	a { color: #fff; }
+	.center { text-align: center;}
+	.next { padding-top: 1em; border-top: 1px solid #bbb;}
+	.oe-panel { color: #fff; padding: 1em 1%; }
+	
+	.oe-orange { background-color: #fd8303; }
+	.oe-fuschia { background-color: #cf409a; }
+	.oe-blue { background-color: #2aace3; }
+	.oe-green { background-color: #2bb673; }
+	.oe-purple { background-color: #2e3192; }
+	</style>
+</head>
+
+<body>
+
+<article id="intro" class="oe-panel oe-purple">
+	<h1>Open Everything</h1>
+	
+	<p>This is a demonstration of how the Open Everything Exhibition could transfer to an online, interactive space.</p>
+	
+	<p class="center"><a class="lib-button-small-grey nextpanel" href="#access">View the Exhibit</a></p>
+</article>
+
+<article id="access" class="oe-panel oe-orange">
+	<h2>Open Access</h2>
+	
+	<p><em>This is a one sentence blurb definition about whatever the topic is.</em></p>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	
+	<h3>What Would You Do?</h3>
+	
+	<div class="line">
+		<div class="span2 unit left center">
+			<a href="#accessyes" class="lib-button-small-grey click-yes">Yes, Do the Thing</a>
+		</div>
+		<div class="span2 unit left center">
+			<a href="#accessno" class="lib-button-small-grey click-no">No, don't do the thing</a>
+		</div>
+	</div>
+	
+	<div class="answer lib-yes" id="accessyes">
+		<p>YES - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+	</div>
+	
+	<div class="answer lib-no" id="accessno">
+		<p>NO - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+	</div>
+	
+	<p class="center next"><a class="lib-button-small-grey nextpanel" href="#code">Next Topic</a></p>
+</article>
+			
+<article id="code" class="oe-panel oe-green">
+	<h2>Open Software</h2>
+	
+	<p><em>This is a one sentence blurb definition about whatever the topic is.</em></p>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	
+	<h3>What Would You Do?</h3>
+	
+	<div class="line">
+		<div class="span2 unit left center">
+			<a href="#codeyes" data-link="#codeyes" class="lib-button-small-grey click-yes">Yes, Do the Thing</a>
+		</div>
+		<div class="span2 unit left center">
+			<a href="#codeno" data-link="#codeno" class="lib-button-small-grey click-no">No, don't do the thing</a>
+		</div>
+
+	
+	<div class="answer lib-yes" id="codeyes">
+		<p>YES - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+	</div>
+	
+	<div class="answer lib-no" id="codeno">
+		<p>NO - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+	</div>
+	</div>
+	
+	<p class="center"><a class="lib-button-small-grey nextpanel" href="#">Next Topic</a></p>
+</article>
+<article id="books" class="oe-panel oe-fuschia">
+	<h2>Open Textbooks</h2>
+	
+	<p><em>This is a one sentence blurb definition about whatever the topic is.</em></p>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	
+	<h3>What Would You Do?</h3>
+	
+	<div class="line">
+		<div class="span2 unit left center">
+			<a href="#bookyes" class="lib-button-small-grey click-yes">Yes, Do the Thing</a>
+		</div>
+		<div class="span2 unit left center">
+			<a href="#bookno" data-link="#codeno" class="lib-button-small-grey click-no">No, don't do the thing</a>
+		</div>
+
+	
+	<div class="answer lib-yes" id="bookyes">
+		<p>YES - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+	</div>
+	
+	<div class="answer lib-no" id="bookno">
+		<p>NO - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+	</div>
+	</div>
+	
+	<p class="center"><a class="lib-button-small-grey nextpanel" href="#">Next Topic</a></p>
+</article>
+
+<article id="data" class="oe-panel oe-blue">
+	<h2>Open Data</h2>
+	
+	<p><em>This is a one sentence blurb definition about whatever the topic is.</em></p>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	
+	<h3>What Would You Do?</h3>
+	
+	<div class="line">
+		<div class="span2 unit left center">
+			<a href="#datayes" class="lib-button-small-grey click-yes">Yes, Do the Thing</a>
+		</div>
+		<div class="span2 unit left center">
+			<a href="#datano" class="lib-button-small-grey click-no">No, don't do the thing</a>
+		</div>
+
+	
+	<div class="answer lib-yes" id="datayes">
+		<p>YES - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+	</div>
+	
+	<div class="answer lib-no" id="datano">
+		<p>NO - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+	</div>
+	</div>
+	
+	<p class="center"><a class="lib-button-small-grey nextpanel" href="#">Next Topic</a></p>
+</article>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function() {
+
+	// Hide all the answers
+	$(".answer").hide();
+
+	/*
+	// Do the crazy CSS for stacking the panels
+	$('.oe-panel').css('position', 'absolute').css('top', '0').css('left', '0').css('width', '100%').css('height', '100%');
+	// Set up the z-index business
+	x = 10;
+	$('.oe-panel').each(function() {
+		$(this).css('z-index', x);
+		x = x-1;
+	});
+	
+	// Navigate through z-index
+	$('.nextpanel').click(function() {
+		// What is the highest z-index?
+		max = 0;
+		$('.oe-panel').each(function() {
+	            // Find the current z-index value
+	            var z = parseInt($(this).css("z-index"), 10);
+	            max = Math.max(max, z);
+	        });
+		$(this).closest('.oe-panel').next('.oe-panel').css('z-index', max + 1);
+	});
+	*/
+	
+	// Show answers when clicked
+	$(".click-yes").click(function(e) {
+		e.preventDefault();
+		$(".answer").hide();
+		$(this).closest('.oe-panel').find('.lib-yes').slideDown(400);
+	});
+	
+	// Show answers when clicked
+	$(".click-no").click(function(e) {
+		e.preventDefault();
+		$(".answer").hide();
+		$(this).closest('.oe-panel').find('.lib-no').slideDown(400);
+	});
+	
+	
+});
+</script>
+</body>
+</html>
