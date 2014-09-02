@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, 
+blockquote:after,
+q:before, 
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.line{
+	overflow:hidden;
+	*overflow:visible;
+	*zoom:1;
+	clear:both;
+}
+.span1{
+	width:99%;
+}
+.span2,
+.span3,
+.span4,
+.span2of3,
+.span3of4{
+	width:99%;
+}
+.unit{
+	padding:.5em 0;
+}
+.left,
+.right{
+	float:none;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+p {
+	font-size: 1em;
+	line-height: 1.7em;
+	margin: 1em 0;
+}
+i {
+	font-style: italic;
+}
+a { 
+	color: #fff; 
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family: Lato, sans-serif;
+}
+h1, 
+h2 {
+	text-transform: uppercase;
+}
+h1 span, 
+h2 span, 
+h3 span, 
+h4 span, 
+h5 span, 
+h6 span,
+.definition span {
+	font-weight: bold;
+}
+h1 {
+	font-size: 3em;
+	padding: .5em 0;
+}
+h2 {
+	font-size: 1.75em;
+	padding: .7em 0;
+	line-height: 1.2em;
+}
+h3 {
+	font-weight: bold;
+	font-size: 1.8em;
+	padding: .8em 0;
+}
+h3.choices  {
+	text-align: center;
+	font-size: 1.5em;
+}
+.true-story h3 {
+	font-weight: normal;
+	font-size: 1.5em;
+	text-align:center;
+}
+.allcaps {
+	font-family: Lato, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+a.choice { 
+	display: block; 
+	height: auto; 
+	width: 80%; 
+	text-align:center; 
+	padding: 1em 5%; 
+	margin: 0 auto; 
+	border: 1px solid #fff; 
+	text-decoration: none; 
+	line-height: 1.8em;
+	transition: background-color 0.4s ease;
+}
+a.choice:hover { 
+	background-color: #2e3192; 
+}
+.center { 
+	text-align: center;
+}
+.next { 
+	padding-top: 1em; 
+	border-top: 1px solid #bbb;
+}
+.oe-panel { 
+	color: #fff; 
+	padding: 1em 3%; 
+}
+.oe-orange { 
+	background-color: #fd8303; 
+}
+.oe-fuschia { 
+	background-color: #cf409a; 
+}
+.oe-blue { 
+	background-color: #2aace3; 
+}
+.oe-green { 
+	background-color: #2bb673; 
+}
+.oe-purple { 
+	background-color: #2e3192; 
+}
+.quote { 
+	background-color: #575757; 
+	color: #efefef; 
+	font-size: 1.5em; 
+	padding: 2em 3%;
+}
+.quote blockquote cite:before { 
+	content:"\2014"; 
+}
+.answer {
+	margin-top: -1em;
+	text-align:left;
+	background: #fff;
+	color: #333;
+	padding: .5em 5%;
+	border: 1px solid rgba(26,53,71,.12);
+	border-radius: 4px;
+	box-shadow: 0 1px 2px rgba(26,53,71,.1);
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transform: scale(.8) translateY(-30%);
+	transform: scale(.8) translateY(-30%);
+	transition: .4s cubic-bezier(.3, 0, 0, 1.3);
+	height: 0;
+}
+.answer.visible {
+	opacity: 1;
+	pointer-events: auto;
+	-webkit-transform: none;
+	transform: none;
+	height: auto;
+}
+.choices-block div.span2 {
+	position: relative;
+}
+.introquestion { 
+	width: 106%; 
+	margin-left: -3%; 
+	padding: 1em 0%; 
+	text-align: center;
+}
+.nextpanel { 
+	text-align: center;
+	background: #ddd;
+	display: inline-block;
+	padding: .5em 1em;
+	color: #333;
+	text-shadow: 0 1px 0 #fff;
+	transition: .25s;
+	text-decoration: none;
+}
+.nextpanel:hover { 
+	background: #bbb;
+}
+
+@media screen and (min-width: 28.125em) {
+	.span4{
+		width:49%;
+		padding:.5em 1% .5em 0;
+	}	
+	.left{
+		float:left;
+	}
+	.right{
+		float:right;
+	}
+}
+
+@media screen and (min-width: 34.375em) {
+	.span3{
+		width:32%;
+		padding:.5em 1% .5em 0;
+	}
+	.span2of3{
+		width:65%;
+		padding:.5em 1% .5em 0;
+	}
+}
+
+@media screen and (min-width: 40em) {
+	
+
+	
+	/* Increase the padding on the text elements, match question slideshow */
+	
+	.oe-panel { 
+		padding: 1em 10%; 
+	}
+	.introquestion { 
+		margin-left: -13%;
+		width: 125.5%;
+	}
+	a.choice { 
+		height: 6em;
+	}
+}
+
+@media screen and (min-width: 48.75em) {
+	
+	/* Up the font size for headings */
+	
+	h1 {
+		font-size: 6.5em;
+	}
+	h2 {
+		font-size: 2.5em;
+	}
+	h3.choices  {
+		font-size: 3em;
+		text-align: left;
+	}
+
+	.true-story h3 {
+		font-weight: normal;
+		font-size: 3em;
+		text-align: left;
+	}
+	.quote { 
+		font-size: 2.5em; 
+		padding: 2em 10%;}
+	
+}
+
+@media screen and (min-width: 56.25em) {
+	.span2{
+		width:49%;
+		padding:.5em 1% .5em 0;
+	}
+	.span4{
+		width:24%;
+	}
+	.span3of4{
+		width:74%;
+		padding:.5em 1% .5em 0;
+	}
+}
