@@ -211,12 +211,6 @@ a.choice:hover {
 .choices-block div.span2 {
 	position: relative;
 }
-.introquestion { 
-	width: 106%; 
-	margin-left: -3%; 
-	padding: 1em 0%; 
-	text-align: center;
-}
 .nextpanel { 
 	text-align: center;
 	background: #ddd;
@@ -229,6 +223,161 @@ a.choice:hover {
 }
 .nextpanel:hover { 
 	background: #bbb;
+}
+
+/* Styles to control the CSS fading bits */
+
+@-webkit-keyframes qFadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-moz-keyframes qFadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-o-keyframes qFadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@keyframes qFadeInOut {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+#question-slider {
+  	position:relative;
+  	width:106%;
+	height: 8em;
+	text-align: center;
+  	margin-left: -3%;
+}
+#question-slider h2 {
+	width: 100%; 	
+}
+
+.cssanimations #question-slider h2 {
+	position:absolute;
+	left:0;
+	height: 2.8em;
+}
+
+.cssanimations #question-slider h2 {
+  -webkit-animation-name: qFadeInOut;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 24s;
+
+  -moz-animation-name: qFadeInOut;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 24s;
+
+  -o-animation-name: qFadeInOut;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 24s;
+
+  animation-name: qFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 24s;
+}
+.cssanimations #question-slider h2:nth-of-type(1) {
+  -webkit-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  -o-animation-delay: 18s;
+  animation-delay: 18s;
+}
+.cssanimations #question-slider h2:nth-of-type(2) {
+  -webkit-animation-delay: 15s;
+  -moz-animation-delay: 15s;
+  -o-animation-delay: 15s;
+  animation-delay: 15s;
+}
+.cssanimations #question-slider h2:nth-of-type(3) {
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  animation-delay: 12s;
+}
+.cssanimations #question-slider h2:nth-of-type(4) {
+  -webkit-animation-delay: 9s;
+  -moz-animation-delay: 9s;
+  -o-animation-delay: 9s;
+  animation-delay: 9s;
+}
+.cssanimations #question-slider h2:nth-of-type(5) {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
+}
+.cssanimations #question-slider h2:nth-of-type(6) {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.cssanimations #question-slider h2:nth-of-type(7) {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
 }
 
 @media screen and (min-width: 28.125em) {
@@ -264,9 +413,12 @@ a.choice:hover {
 	.oe-panel { 
 		padding: 1em 10%; 
 	}
-	.introquestion { 
+	#question-slider {
 		margin-left: -13%;
 		width: 125.5%;
+	}
+	.cssanimations #question-slider h2 {
+		height: 1.5em;
 	}
 	a.choice { 
 		height: 6em;
@@ -295,7 +447,14 @@ a.choice:hover {
 	}
 	.quote { 
 		font-size: 2.5em; 
-		padding: 2em 10%;}
+		padding: 2em 10%;
+	}
+	.cssanimations #question-slider {
+		height: 10em;
+	}
+	.cssanimations #question-slider h2 {
+		height: 2em;
+	}
 	
 }
 
@@ -311,4 +470,16 @@ a.choice:hover {
 		width:74%;
 		padding:.5em 1% .5em 0;
 	}
+}
+
+@media screen and (min-width:57.8125em) {
+	
+	.cssanimations #question-slider {
+		height: 8.5em;
+	}
+	.cssanimations #question-slider h2 {
+		height: 1.5em;
+	}
+	
+	
 }
