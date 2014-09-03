@@ -154,8 +154,7 @@ a.choice:hover {
 	text-align: center;
 }
 .next { 
-	padding-top: 1em; 
-	border-top: 1px solid #bbb;
+	margin-top: 1.5em; 
 }
 .oe-panel { 
 	color: #fff; 

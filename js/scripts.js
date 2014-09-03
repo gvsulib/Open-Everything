@@ -19,7 +19,7 @@ $(document).ready(function() {
 	slowScroll('#access a.nextpanel', 'code');
 	slowScroll('#code a.nextpanel', 'books');
 	slowScroll('#books a.nextpanel', 'data');
-	slowScroll('#data a.nextpanel', 'resources');
+	slowScroll('#data a.nextpanel', 'moreresources');
 	slowScroll('#intro a.nextpanel', 'access');
 	
 	function slowScroll(trigger, destination) {
