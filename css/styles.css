@@ -309,7 +309,9 @@ a.choice:hover {
 #question-slider h2 {
 	width: 100%; 	
 }
-
+#question-slider h2.q0 {
+	font-size: 1.5em; 	
+}
 .cssanimations #question-slider h2 {
 	position:absolute;
 	left:0;
