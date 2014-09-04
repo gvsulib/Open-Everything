@@ -451,6 +451,9 @@ a.choice:hover {
 	.cssanimations #question-slider h2 {
 		height: 1.5em;
 	}
+	#question-slider h2 {
+		padding: .7em 0 .5em;
+	}
 	#question-slider h2.q0 {
 		height: 2.5em !important; 	
 	}
