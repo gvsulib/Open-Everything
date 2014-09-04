@@ -106,6 +106,9 @@ h6 span,
 .definition span {
 	font-weight: bold;
 }
+h1 span {
+	display: block;
+}
 h1 {
 	font-size: 3em;
 	padding: .5em 0;
@@ -222,6 +225,11 @@ a.choice:hover {
 }
 .nextpanel:hover { 
 	background: #bbb;
+}
+#moreresources a.more {
+	font-size: 1.2em;
+	margin: -.5em 0 1.5em;
+	display: block;
 }
 
 /* Styles to control the CSS fading bits */
