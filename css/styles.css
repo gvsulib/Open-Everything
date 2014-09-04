@@ -82,6 +82,10 @@ p {
 i {
 	font-style: italic;
 }
+p small {
+	font-size: .5em;
+	line-height: .5em;
+}
 a { 
 	color: #fff; 
 }
@@ -288,12 +292,13 @@ a.choice:hover {
  }
 }
 
+
 @keyframes qFadeInOut {
  0% {
    opacity:1;
  }
  17% {
-   opacity:0.1;
+   opacity:1;
  }
  25% {
    opacity:0;
@@ -305,24 +310,6 @@ a.choice:hover {
    opacity:1;
  }
 }
-/*
-@keyframes qFadeInOut {
- 0% {
-   opacity:1;
- }
- 17% {
-   opacity:1;
- }
- 25% {
-   opacity:0;
- }
- 92% {
-   opacity:0;
- }
- 100% {
-   opacity:1;
- }
-}*/
 
 #question-slider {
   	position:relative;
@@ -409,6 +396,12 @@ a.choice:hover {
   -moz-animation-delay: 0;
   -o-animation-delay: 0;
   animation-delay: 0;
+}
+
+.footer {
+	background-color: #575757; 
+	color: #efefef;
+	padding: 1em 3%;
 }
 
 @media screen and (min-width: 28.125em) {
