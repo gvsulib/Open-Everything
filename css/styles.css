@@ -458,7 +458,7 @@ a.choice:hover {
 		height: 2.5em !important; 	
 	}
 	a.choice { 
-		height: 6em;
+		min-height: 6em;
 	}
 }
 
