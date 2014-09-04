@@ -7,6 +7,8 @@ $(document).ready(function() {
 			$(".choice").removeClass('oe-purple');
 			$(".answer").removeClass('visible');
 		} else {
+			$(".choice").removeClass('oe-purple');
+			$(".answer").removeClass('visible');
 			$(this).addClass('oe-purple');
 			$(this).next('.answer').addClass('visible');
 		}
