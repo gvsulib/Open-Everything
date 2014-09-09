@@ -89,6 +89,9 @@ p small {
 a { 
 	color: #fff; 
 }
+img {
+	max-width: 100%;
+}
 h1, 
 h2, 
 h3, 
@@ -228,7 +231,8 @@ a.choice {
 .choices-block div.span2 {
 	position: relative;
 }
-.nextpanel { 
+.nextpanel,
+.button { 
 	text-align: center;
 	background: #ddd;
 	display: inline-block;
@@ -485,8 +489,12 @@ a.choice {
 		text-align: left;
 	}
 
-	.true-story h3 {
+	.true-story h3,
+	.more-images h3 {
 		font-weight: normal;
+		
+	}
+	.true-story h3 {
 		font-size: 3em;
 		text-align: left;
 	}
