@@ -196,9 +196,11 @@ a.choice {
 .answer {
 	margin-top: -1em;
 	text-align:left;
-	background: #fff;
 	color: #333;
 	padding: .5em 5%;
+	
+}
+.opacity .answer {
 	border: 1px solid rgba(26,53,71,.12);
 	border-radius: 4px;
 	box-shadow: 0 1px 2px rgba(26,53,71,.1);
@@ -208,13 +210,20 @@ a.choice {
 	transform: scale(.8) translateY(-30%);
 	transition: .4s cubic-bezier(.3, 0, 0, 1.3);
 	height: 0;
+	background: #fff;
 }
-.answer.visible {
+.opacity .answer.visible {
 	opacity: 1;
 	pointer-events: auto;
 	-webkit-transform: none;
 	transform: none;
 	height: auto;
+}
+.no-opacity .answer {
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid #fff;
+	
 }
 .choices-block div.span2 {
 	position: relative;
