@@ -1,7 +1,12 @@
 $(document).ready(function() {
+	
+	// Date now shim
+	if (!Date.now) {
+	    Date.now = function() { return new Date().getTime(); };
+	}
 
 	// Show answers when clicked
-	$(".choice").click(function(e) {
+	$(".span2 .choice").click(function(e) {
 		e.preventDefault();
 		if($(this).hasClass('oe-purple')) {
 			$(".choice").removeClass('oe-purple');
@@ -14,11 +19,81 @@ $(document).ready(function() {
 		}
 	});
 	
+	// Hide answers if you click on an open answer
 	$(".answer").click(function() {
 		$(".answer").removeClass('visible');
 		$(".choice").removeClass('oe-purple');
 	});
 	
+	// If JS is available, make the interaction stuff better
+	
+	$('form').find('input[type="submit"]').hide();
+	$('form').find('input[type="checkbox"]').hide();
+	$('form').find('div.textarea').hide();
+	
+	$("#whatdoyouthink").find('li').each(function() {
+		$(this).removeClass('list-block').addClass('span4 unit right');
+		
+		// Choose a random color
+		var newClass = randomFrom(['oe-orange', 'oe-fuschia', 'oe-blue', 'oe-green']);
+		
+		// Add the classes to the anchor links
+		$(this).find('a').addClass('choice interaction ' + newClass);
+	});
+	
+	// Record interaction feedback from What Do You Think section
+	$("#whatdoyouthink .choice").click(function(e) {
+		e.preventDefault();
+		var rightNow = Date.now();
+
+		if($(this).hasClass('textinput')) {
+			// Needs to get a text box
+			var textBox = $(this).parent('li').find('div.textarea'), questionText = $(this).text();
+			textBox.prepend('<p><i>' + questionText + '</i></p>');
+			textBox.append('<span class="cancel">Cancel</span>&nbsp;<span class="submit oe-purple">Tell Us</span>');
+			textBox.addClass('modal').show();
+			$("#fade").css('display','block');
+			$("#whatdoyouthink").css('position','relative');
+			
+			// Add a close button handler
+			$("#whatdoyouthink").find('.modal').find('.cancel').click(function() {
+				$(this).closest('div.textarea').hide();
+				$('#fade').hide();
+			});
+			
+			// Set click handler for recording
+			// Capture problem with text feedback
+			$("#whatdoyouthink").find('.modal').find('.submit').click(function() {
+				var answerChoice = questionText + $(this).parent('div.textarea').find('textarea').val();
+				$(this).parent('div').parent('li').find('a.choice').removeClass('choice').addClass('oe-ia-selected').text(answerChoice);
+				$(this).closest('div.textarea').hide();
+				$('#fade').hide();
+				$.ajax({ url: 'record.php',
+				         data: {time: rightNow, answer: answerChoice},
+				         type: 'post',
+				         success: function(output) {
+				                     console.log(output);
+				                  }
+				});
+			});
+			
+			
+		} else {
+			// Change colors, send to CSV file with timestamp
+			var answerChoice = $(this).attr("data-answer");
+			$(this).removeClass('choice').addClass('oe-ia-selected');
+			$.ajax({ url: 'record.php',
+			         data: {time: rightNow, answer: answerChoice},
+			         type: 'post',
+			         success: function(output) {
+			                     console.log(output);
+			                  }
+			});
+		}
+	});
+	
+	
+	// Setup for slow scroll
 	var root = /firefox|trident/i.test(navigator.userAgent) ? document.documentElement : document.body;
 	var transform = "transform" in root.style ? "transform" : "webkitTransform";
 	  var easeInOutCubic = function(t, b, c, d) {
@@ -26,24 +101,14 @@ $(document).ready(function() {
 	    return c/2*((t-=2)*t*t + 2) + b;
 	  };
 	
+	// Apply slow scrolling function
 	slowScroll('#access a.nextpanel', 'code');
 	slowScroll('#code a.nextpanel', 'books');
 	slowScroll('#books a.nextpanel', 'data');
-	slowScroll('#data a.nextpanel', 'moreresources');
+	slowScroll('#data a.nextpanel', 'whatdoyouthink');
 	slowScroll('#intro a.nextpanel', 'access');
 	slowScroll('#moreresources a.nextpanel', 'exhibit');
-	
-	HTMLElement.prototype.removeClass = function(remove) {
-	    var newClassName = "";
-	    var i;
-	    var classes = this.className.split(" ");
-	    for(i = 0; i < classes.length; i++) {
-	        if(classes[i] !== remove) {
-	            newClassName += classes[i] + " ";
-	        }
-	    }
-	    this.className = newClassName;
-	}
+	slowScroll('#whatdoyouthink a.nextpanel', 'moreresources');
 	
 	function slowScroll(trigger, destination) {
 		document.querySelector(trigger).addEventListener("click", function(e) {
@@ -61,5 +126,10 @@ $(document).ready(function() {
 		    requestAnimationFrame(scrollToExamples)
 		    e.preventDefault()
 		  });
-	}	
+	}
+	
+	function randomFrom(array) {
+	  return array[Math.floor(Math.random() * array.length)];
+	}
+		
 });

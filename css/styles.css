@@ -187,6 +187,23 @@ a.choice {
 .oe-purple { 
 	background-color: #2e3192; 
 }
+a.oe-ia-selected {
+	/* Override other selections on interactive boxes */
+	/*background-color: #fff !important;*/
+	background: #fff url(../img/check.png) top right no-repeat !important;
+	color: #333 !important;
+	display: block;
+	text-align:center; 
+	text-decoration: none; 
+	line-height: 1.8em;
+}
+.opacity a.oe-ia-selected { 
+	height: auto; 
+	width: 80%; 
+	padding: 1em 5%; 
+	margin: 0 auto; 
+	border: 1px solid #fff; 
+}
 .quote { 
 	background-color: #575757; 
 	color: #efefef; 
@@ -242,6 +259,7 @@ a.choice {
 	transition: .25s;
 	text-decoration: none;
 }
+
 .nextpanel:hover { 
 	background: #bbb;
 }
@@ -249,6 +267,35 @@ a.choice {
 	font-size: 1.2em;
 	margin: -.5em 0 1.5em;
 	display: block;
+}
+li.list-block {
+	margin: .8em 0;
+}
+li.list-block a {
+	text-decoration: none;
+}
+li.list-block textarea { 
+	width: 96%; 
+	padding: .5em 2%; 
+}
+input[type="submit"] {
+	text-align: center;
+	display: inline-block;
+	padding: .5em 1em;
+	color: #fff;
+	border: none;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+.submit {
+	text-align: center;
+	display: inline-block;
+	padding: .5em 3%;
+	color: #fff;
+	border: none;
+	text-decoration: none;
+	font-size: 1.5em;
+	float: right;
 }
 
 /* Styles to control the CSS fading bits */
@@ -422,11 +469,62 @@ a.choice {
 	color: #efefef;
 	padding: 1em 3%;
 }
-
+.modal {
+	display: block;
+    position: absolute; 
+    left: 25%;
+    top: 40%; 
+    padding: .75em 1.6em 1.6em; 
+    border: 1px solid #fff;
+    background-color: #2aace3;
+    width: 50%;
+    height: 10em;
+    z-index: 100;
+}
+.modal textarea {
+	display: block;
+	width: 96%;
+	padding: .5em 2%;
+	font-size: 1.2em;
+}
+.modal .cancel {
+	text-decoration: underline;
+	cursor: pointer;
+	margin-top: .9em;
+	display: inline-block;
+}
+#fade {
+    display: none;  
+    position: absolute; 
+    left: 0%; 
+    top: 0%;
+    background-color: black;
+    -moz-opacity: 0.7; 
+    opacity: .70;
+    filter: alpha(opacity=70);
+    width: 100%;
+    height: 100%;
+    z-index: 90; 
+}
+.intro-break {
+	margin-top: 1.5em;
+	padding-top: 1.5em;
+	border-top: 1px dotted #fff;
+}
+#nav .primary-links {
+	margin: 1.5em 0 3em;
+}
+#nav .secondary-links {
+	margin: 1.5em 0 3em;
+}
 @media screen and (min-width: 28.125em) {
 	.span4{
 		width:49%;
 		padding:.5em 1% .5em 0;
+	}
+	#whatdoyouthink a.choice,
+	#whatdoyouthink a.oe-ia-selected { 
+		min-height: 8em;
 	}	
 	.left{
 		float:left;
@@ -466,11 +564,15 @@ a.choice {
 	#question-slider h2 {
 		padding: .7em 0 .5em;
 	}
-	#question-slider h2.q0 {
+	.cssanimations #question-slider h2.q0 {
 		height: 2.5em !important; 	
 	}
 	a.choice { 
 		min-height: 6em;
+	}
+	#whatdoyouthink a.choice,
+	#whatdoyouthink a.oe-ia-selected { 
+		min-height: 10em;
 	}
 }
 
@@ -480,6 +582,9 @@ a.choice {
 	
 	h1 {
 		font-size: 6.5em;
+	}
+	#whatdoyouthink h1 {
+		font-size: 4.5em;
 	}
 	h2 {
 		font-size: 2.5em;
@@ -523,6 +628,7 @@ a.choice {
 		width:74%;
 		padding:.5em 1% .5em 0;
 	}
+	
 }
 
 @media screen and (min-width:57.8125em) {
@@ -541,5 +647,8 @@ a.choice {
 	#question-slider h2.q0 {
 		height: 1.5em !important; 	
 	}
-	
+	#whatdoyouthink a.choice,
+	#whatdoyouthink a.oe-ia-selected { 
+		min-height: 7em;
+	}
 }

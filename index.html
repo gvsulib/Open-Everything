@@ -49,12 +49,53 @@
 	<p class="center"><a class="nextpanel" href="#access">Begin</a></p>
 </article>
 
+
+<article id="nav" class="oe-panel oe-purple">
+	<h1 class="center">Learn About:</h1>
+	<div class="line primary-links">
+		<div class="span4 unit left">
+			<a href="#access" class="choice oe-orange">
+				<h3><span>Open</span> Access</h3>
+			</a>
+		</div>
+		<div class="span4 unit left">
+			<a href="#access" class="choice oe-green">
+				<h3><span>Open</span> Software</h3>
+			</a>
+		</div>
+		<div class="span4 unit left">
+			<a href="#access" class="choice oe-fuschia">
+				<h3><span>Open</span> Textbooks</h3>
+			</a>
+		</div>
+		<div class="span4 unit left">
+			<a href="#access" class="choice oe-blue">
+				<h3><span>Open</span> Data</h3>
+			</a>
+		</div>
+	</div>
+	
+	<div class="line secondary-links">
+		<div class="span4 unit left center">
+			<a href="#">What Do You Think?</a>
+		</div>
+			<div class="span4 unit left center">
+				<a href="#">More Resources</a>
+			</div>
+				<div class="span4 unit left center">
+					<a href="#">About the Exhibit</a>
+				</div>
+					<div class="span4 unit left center">
+						<a href="#">Host Your Own</a>
+					</div>
+				</div>
+	
+</article>
 <article class="quote">
 	<blockquote><p>Information is power. But like all power, there are those who want to keep it for themselves.</p>
 		<cite>Aaron Swartz</cite>
 	</blockquote>
 </article>
-
 <article id="access" class="oe-panel oe-orange">
 	<h1><span>Open </span>Access</h1>
 	
@@ -201,7 +242,80 @@
 
 		</div>
 	
-	<p class="center next"><a class="nextpanel" href="#moreresources">Learn More</a></p>
+	<p class="center next"><a class="nextpanel" href="#whatdoyouthink">What Do You Think?</a></p>
+</article>
+<article class="quote">
+	<blockquote><p>All information belongs to everybody all the time. It should be available. It should be accessible to the child, to the woman, to the man, to the old person, to the semi-literate, to the presidents of universities, to everyone. It should be open.</p>
+		<cite>Maya Angelou</cite>
+	</blockquote>
+</article>
+<article id="whatdoyouthink" class="oe-panel oe-purple">
+	<h1 class="center">What do you think?</h1>
+	
+	<h2 class="center">Click any that apply.</h2>
+	
+	<noscript>This section works best with JavaScript enabled.</noscript>
+	<form action="record.php" method=-"post" id="oe-interactions">
+	<ol>
+		<li class="list-block">
+			<input type="checkbox" name="commodity" value="1" />
+			<a href="#ia-commodity" data-answer="commodity">I hadn&#8217;t thought of information as a commodity before.</a>
+		</li>
+			<li class="list-block">
+			<input type="checkbox" name="cost" value="1" />
+			<a href="#ia-cost" data-answer="cost">I was surprised by how much it can cost to access research.</a>
+		</li>
+			<li class="list-block">
+			<input type="checkbox" name="public-access" value="1" />
+			<a href="#ia-publicaccess" data-answer="public access">Providing the public with access to data seems very important.</a>
+		</li>
+		<li class="list-block">
+			<input type="checkbox" name="human-genome-project" value="1" />
+			<a href="#ia-hgp" data-answer="human genome project">I didn't know that I could access data from the Human Genome Project.</a>
+		</li>
+			<li class="list-block">
+			<input type="checkbox" name="open-code" value="1" />
+			<a href="#ia-opencode" data-answer="open code">I was surprised by how many things are the result of open code.</a>
+		</li>
+			<li class="list-block">
+			<input type="checkbox" name="open-textbooks" value="1" />
+			<a href="#ia-textbooks" data-answer="open textbooks">The idea of open textbooks sounds great to me.</a>
+		</li>
+			<li class="list-block">
+			<input type="checkbox" name="unfair-access" value="1" />
+			<a href="#ia-unfairaccess" data-answer="unfair access">It seems unfair that some people can access info while others can&#8217;t.</a>
+		</li>
+			<li class="list-block">
+			<input type="checkbox" name="access-to-research" value="1" />
+			<a href="#ia-research" data-answer="access to research">Providing access to the latest research is very important.</a>
+		</li>
+		<li class="list-block">
+			<input type="checkbox" name="open-code" value="1" />
+			<a href="#ia-opencode" data-answer="open code">I really like the idea of open code and software.</a>
+		</li>
+			<li class="list-block">
+			<input type="checkbox" name="gvsu-open-textbooks" value="1" />
+			<a href="#ia-gvsu-oer" data-answer="gvsu open textbooks">I wasn&#8217;t aware that <abbr title="Grand Valley State University">GVSU</abbr> professors are developing open educational resources.</a>
+		</li>
+		<li class="list-block">
+			<a href="#ia-disagree" data-answer="disagree" class="textinput">I disagree with....</a>
+			<div class="textarea">
+				<textarea class="ia-text" name="ia-disagree" id="ia-disagree"></textarea>
+			</div>
+		</li>
+		<li class="list-block">
+			<a href="#ia-hgp" data-answer="human genome project" class="textinput">I was surprised by...</a>
+			<div class="textarea">
+				<textarea class="ia-text" name="ia-disagree" id="ia-disagree"></textarea>
+			</div>
+		</li>
+	</ol>
+	<input type="submit" value="Share Your Thoughts" class="oe-blue" />
+	</form>
+	<div id="fade"></div>
+	<div style="clear:both;"></div>
+	<p class="center next" style="margin-top: 2em;"><a class="nextpanel" href="#moreresources">Learn More</a></p>
+	
 </article>
 <article class="quote">
 	<blockquote><p>Control over the use of one&#8217;s ideas really constitutes control over other people&#8217;s lives; and it is usually used to make their lives more difficult.</p>
@@ -231,11 +345,7 @@
 	<p class="center next"><a class="nextpanel" href="#exhibit">About the Exhibit</a></p>
 	<div style="margin-bottom: 2em;"></div>
 </article>
-<article class="quote">
-	<blockquote><p>All information belongs to everybody all the time. It should be available. It should be accessible to the child, to the woman, to the man, to the old person, to the semi-literate, to the presidents of universities, to everyone. It should be open.</p>
-		<cite>Maya Angelou</cite>
-	</blockquote>
-</article>
+
 <article id="exhibit" class="oe-panel oe-fuschia">
 	<h1><span>Open </span>Everything</h1>	
 	
@@ -280,6 +390,7 @@
 	<p class="center">Open Everything Exhibit website by <a href="http://gvsu.edu/library">Grand Valley State University Libraries</a>.<br />
 		All content available under the <a href="https://creativecommons.org/licenses/by/3.0/us/"><abbr title="Creative Commons Attribution">CC-BY</abbr></a> license. <a href="https://github.com/gvsulib/Open-Everything">Source code is available at Github</a>.</p>
 </article>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/modernizr.js"></script>
 <script src="js/scripts.js"></script>
