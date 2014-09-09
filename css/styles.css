@@ -142,19 +142,21 @@ h3.choices  {
 	font-weight: bold;
 	font-size: 1.5em;
 }
-a.choice { 
-	display: block; 
+a.choice {
+	display: block;
+	text-align:center; 
+	text-decoration: none; 
+	line-height: 1.8em;
+}
+.opacity a.choice { 
 	height: auto; 
 	width: 80%; 
-	text-align:center; 
 	padding: 1em 5%; 
 	margin: 0 auto; 
 	border: 1px solid #fff; 
-	text-decoration: none; 
-	line-height: 1.8em;
 	transition: background-color 0.4s ease;
 }
-a.choice:hover { 
+.opacity a.choice:hover { 
 	background-color: #2e3192; 
 }
 .center { 
