@@ -174,7 +174,14 @@ a.choice {
 	text-decoration: none; 
 	line-height: 1.8em;
 }
-.opacity a.choice { 
+.opacity #whatdoyouthink label {
+	display: block;
+	cursor: pointer;
+	text-align:center; 
+	line-height: 1.8em;
+}
+.opacity a.choice,
+.opacity #whatdoyouthink label { 
 	height: auto; 
 	width: 80%; 
 	padding: 1em 5%; 
@@ -182,7 +189,8 @@ a.choice {
 	border: 1px solid #fff; 
 	transition: background-color 0.4s ease;
 }
-.opacity a.choice:hover { 
+.opacity a.choice:hover,
+.opacity #whatdoyouthink label:hover { 
 	background-color: #2e3192; 
 }
 .center { 
@@ -196,7 +204,7 @@ a.choice {
 	padding: 0 3% 1em; 
 }
 .oe-orange { 
-	background-color:  #fd6200; /* Original - #fd8303 made more accessible */ 
+	background-color:  #cc4d00; /* Original - #fd8303 made more accessible */ 
 }
 .oe-fuschia { 
 	background-color: #cf407a; /* Original - #cf409a made more accessible */ 
@@ -210,7 +218,7 @@ a.choice {
 .oe-purple { 
 	background-color: #2e3192; 
 }
-a.oe-ia-selected {
+.oe-ia-selected {
 	/* Override other selections on interactive boxes */
 	/*background-color: #fff !important;*/
 	background: #fff url(../img/check.png) top right no-repeat !important;
@@ -220,7 +228,7 @@ a.oe-ia-selected {
 	text-decoration: none; 
 	line-height: 1.8em;
 }
-.opacity a.oe-ia-selected { 
+.opacity .oe-ia-selected { 
 	height: auto; 
 	width: 80%; 
 	padding: 1em 5%; 
@@ -240,6 +248,7 @@ a.oe-ia-selected {
 	margin-top: -1em;
 	text-align:left;
 	color: #333;
+	background-color: #fff;
 	padding: .5em 5%;
 	
 }
@@ -253,7 +262,7 @@ a.oe-ia-selected {
 	transform: scale(.8) translateY(-30%);
 	transition: .4s cubic-bezier(.3, 0, 0, 1.3);
 	height: 0;
-	background: #fff;
+	background-color: #fff;
 }
 .opacity .answer.visible {
 	opacity: 1;
@@ -546,7 +555,7 @@ input[type="submit"] {
 }
 
 #access {
-	background: #fd6200 url(../img/oe-access-small.png) 100% -.25em no-repeat;
+	background: #cc4d00 url(../img/oe-access-small.png) 100% -.25em no-repeat;
 }
 #code {
 	background: #2B8800 url(../img/oe-code-small.png) 130% -.4em no-repeat;
@@ -561,7 +570,7 @@ input[type="submit"] {
 		background: #2B8800 url(../img/oe-code-tiny.png) 102% -.25em no-repeat;
 }
 #nav #access-nav .choice {
-	background: #fd6200 url(../img/oe-access-tiny.png) 102% -.25em no-repeat;
+	background: #cc4d00 url(../img/oe-access-tiny.png) 102% -.25em no-repeat;
 }
 
 #nav #books-nav .choice {
@@ -583,8 +592,8 @@ input[type="submit"] {
 		width:49%;
 		padding:.5em 1% .5em 0;
 	}
-	#whatdoyouthink a.choice,
-	#whatdoyouthink a.oe-ia-selected { 
+	#whatdoyouthink label,
+	#whatdoyouthink label.oe-ia-selected { 
 		min-height: 8em;
 	}	
 	.left{
@@ -656,11 +665,12 @@ input[type="submit"] {
 	.cssanimations #question-slider h2.q0 {
 		height: 2.5em !important; 	
 	}
-	a.choice { 
+	a.choice,
+	#whatdoyouthink label { 
 		min-height: 6em;
 	}
-	#whatdoyouthink a.choice,
-	#whatdoyouthink a.oe-ia-selected { 
+	#whatdoyouthink label,
+	#whatdoyouthink label.oe-ia-selected { 
 		min-height: 10em;
 	}
 }
@@ -703,7 +713,7 @@ input[type="submit"] {
 		height: 2em;
 	}
 	#access {
-		background: #fd6200 url(../img/oe-access.png) 100% -.1em no-repeat;
+		background: #cc4d00 url(../img/oe-access.png) 100% -.1em no-repeat;
 	}
 	#code {
 		background: #2B8800 url(../img/oe-code.png) 100% -.1em no-repeat;

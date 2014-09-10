@@ -16,14 +16,15 @@ $(document).ready(function() {
 			$(".answer").removeClass('visible');
 			$(this).addClass('oe-purple');
 			$(this).next('.answer').addClass('visible');
+			// Hide answers if you click on an open answer
+			$(".answer").click(function() {
+				$(".answer").removeClass('visible');
+				$(".choice").removeClass('oe-purple');
+			});
 		}
 	});
 	
-	// Hide answers if you click on an open answer
-	$(".answer").click(function() {
-		$(".answer").removeClass('visible');
-		$(".choice").removeClass('oe-purple');
-	});
+	
 	
 	// If JS is available, make the interaction stuff better
 	
@@ -38,11 +39,11 @@ $(document).ready(function() {
 		var newClass = randomFrom(['oe-orange', 'oe-fuschia', 'oe-blue', 'oe-green']);
 		
 		// Add the classes to the anchor links
-		$(this).find('a').addClass('choice interaction ' + newClass);
+		$(this).find('label').addClass('choice interaction ' + newClass);
 	});
 	
 	// Record interaction feedback from What Do You Think section
-	$("#whatdoyouthink .choice").click(function(e) {
+	$("#whatdoyouthink label").click(function(e) {
 		e.preventDefault();
 		var rightNow = Date.now();
 
@@ -65,7 +66,7 @@ $(document).ready(function() {
 			// Capture problem with text feedback
 			$("#whatdoyouthink").find('.modal').find('.submit').click(function() {
 				var answerChoice = questionText + $(this).parent('div.textarea').find('textarea').val();
-				$(this).parent('div').parent('li').find('a.choice').removeClass('choice').addClass('oe-ia-selected').text(answerChoice);
+				$(this).parent('div').parent('li').find('label').removeClass('choice').addClass('oe-ia-selected').text(answerChoice);
 				$(this).closest('div.textarea').hide();
 				$('#fade').hide();
 				$.ajax({ url: 'record.php',
@@ -80,8 +81,8 @@ $(document).ready(function() {
 			
 		} else {
 			// Change colors, send to CSV file with timestamp
-			var answerChoice = $(this).attr("data-answer");
-			$(this).removeClass('choice').addClass('oe-ia-selected');
+			var answerChoice = $(this).text();
+			$(this).addClass('oe-ia-selected');
 			$.ajax({ url: 'record.php',
 			         data: {time: rightNow, answer: answerChoice},
 			         type: 'post',
