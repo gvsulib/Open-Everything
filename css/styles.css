@@ -95,7 +95,15 @@ a {
 a:active,
 a:hover {
   position: relative;
-  top: 1px;
+  top: -1px;
+}
+.more-images a {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+.more-images a:active,
+.more-images a:hover {
+	position: static;
 }
 img {
 	max-width: 100%;
@@ -281,7 +289,7 @@ a.oe-ia-selected {
 #moreresources a.more {
 	font-size: 1.2em;
 	margin: -.5em 0 1.5em;
-	display: block;
+	display: inline-block;
 }
 li.list-block {
 	margin: .8em 0;
@@ -391,9 +399,9 @@ input[type="submit"] {
 #question-slider {
   	position:relative;
   	width:106%;
-	height: auto;
+	height: 4em;
 	text-align: center;
-  	margin: 1em 0 3em -3%;
+  	margin: 2em 0 3em -3%;
 	margin-bottom: 3em;
 }
 .cssanimations {
@@ -562,6 +570,12 @@ input[type="submit"] {
 
 #nav #data-nav .choice {
 	background: #2aace3 url(../img/oe-data-tiny.png) 102% -.25em no-repeat;
+}
+.downloads {
+	margin: 4em 0;
+}
+#hostyourown {
+	margin-top: 2em;
 }
 
 @media screen and (min-width: 28.125em) {
