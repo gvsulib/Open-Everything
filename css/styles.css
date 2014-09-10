@@ -113,7 +113,8 @@ h6 span,
 .definition span {
 	font-weight: bold;
 }
-h1 span {
+h1 span,
+#nav h3 span {
 	display: block;
 }
 h1 {
@@ -129,6 +130,12 @@ h3 {
 	font-weight: bold;
 	font-size: 1.8em;
 	padding: .8em 0;
+}
+#nav h3 {
+	text-transform: uppercase;
+	font-weight: normal;
+	text-align: left;
+	font-size: 2.0em;
 }
 h3.choices  {
 	text-align: center;
@@ -170,7 +177,7 @@ a.choice {
 }
 .oe-panel { 
 	color: #fff; 
-	padding: 1em 3%; 
+	padding: 0 3% 1em; 
 }
 .oe-orange { 
 	background-color: #fd8303; 
@@ -517,6 +524,22 @@ input[type="submit"] {
 #nav .secondary-links {
 	margin: 1.5em 0 3em;
 }
+#access {
+	background: #fd8303 url(../img/oe-access-small.png) 100% -.25em no-repeat;
+}
+#code {
+	background: #2bb673 url(../img/oe-code-small.png) 130% -.4em no-repeat;
+}
+#data {
+	background: #2aace3 url(../img/oe-data-small.png) 101% -.3em no-repeat;
+}
+#books {
+	background: #cf409a url(../img/oe-books-small.png) 134% -.3em no-repeat;
+}
+#nav #code-nav .choice {
+		background: #2bb673 url(../img/oe-code-tiny.png) 102% -.25em no-repeat;
+	}
+
 @media screen and (min-width: 28.125em) {
 	.span4{
 		width:49%;
@@ -532,6 +555,15 @@ input[type="submit"] {
 	.right{
 		float:right;
 	}
+	#code {
+		background: #2bb673 url(../img/oe-code-small.png) 110% -.4em no-repeat;
+	}
+	#books {
+		background: #cf409a url(../img/oe-books-small.png) 120% -.3em no-repeat;
+	}
+	#nav #code-nav .choice {
+			background: #2bb673 url(../img/oe-code-tiny.png) 140% -.25em no-repeat;
+		}
 }
 
 @media screen and (min-width: 34.375em) {
@@ -543,6 +575,15 @@ input[type="submit"] {
 		width:65%;
 		padding:.5em 1% .5em 0;
 	}
+	#code {
+		background: #2bb673 url(../img/oe-code-small.png) 102% -.4em no-repeat;
+	}
+	#books {
+		background: #cf409a url(../img/oe-books-small.png) 104% -.3em no-repeat;
+	}
+	#nav #code-nav .choice {
+			background: #2bb673 url(../img/oe-code-tiny.png) 120% -.25em no-repeat;
+		}
 }
 
 @media screen and (min-width: 40em) {
@@ -552,7 +593,7 @@ input[type="submit"] {
 	/* Increase the padding on the text elements, match question slideshow */
 	
 	.oe-panel { 
-		padding: 1em 10%; 
+		padding: 0 10% 1em; 
 	}
 	#question-slider {
 		margin-left: -13%;
@@ -613,6 +654,19 @@ input[type="submit"] {
 	.cssanimations #question-slider h2 {
 		height: 2em;
 	}
+	#access {
+		background: #fd8303 url(../img/oe-access.png) 100% -.1em no-repeat;
+	}
+	#code {
+		background: #2bb673 url(../img/oe-code.png) 100% -.1em no-repeat;
+	}
+
+	#data {
+		background: #2aace3 url(../img/oe-data.png) 101% -.3em no-repeat;
+	}
+	#nav #code-nav .choice {
+			background: #2bb673 url(../img/oe-code-tiny.png) 105% -.25em no-repeat;
+		}
 	
 }
 
@@ -628,7 +682,15 @@ input[type="submit"] {
 		width:74%;
 		padding:.5em 1% .5em 0;
 	}
-	
+	#books {
+		background: #cf409a url(../img/oe-books.png) 110% -.3em no-repeat;
+	}
+	#nav #code-nav .choice {
+			background: #2bb673 url(../img/oe-code-tiny.png) 200% -1.75em no-repeat;
+	}
+	#nav h3 {
+		font-size: 1.6em;
+	}
 }
 
 @media screen and (min-width:57.8125em) {
@@ -643,6 +705,15 @@ input[type="submit"] {
 	
 }
 
+@media screen and (min-width: 61em) {
+	#books {
+		background: #cf409a url(../img/oe-books.png) 102% -.3em no-repeat;
+	}
+	#nav #code-nav .choice {
+			background: #2bb673 url(../img/oe-code-tiny.png) 130% -1.75em no-repeat;
+	}
+}
+
 @media screen and (min-width:76.5625em) {
 	#question-slider h2.q0 {
 		height: 1.5em !important; 	
@@ -650,5 +721,11 @@ input[type="submit"] {
 	#whatdoyouthink a.choice,
 	#whatdoyouthink a.oe-ia-selected { 
 		min-height: 7em;
+	}
+	#nav h3 {
+		font-size: 1.9em;
+	}
+	#nav #code-nav .choice {
+			background: #2bb673 url(../img/oe-code-tiny.png) 110% -1.25em no-repeat;
 	}
 }
