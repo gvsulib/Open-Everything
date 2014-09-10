@@ -133,7 +133,8 @@ h1 span,
 #nav h3 span {
 	display: block;
 }
-h1 {
+h1,
+#nav h2 {
 	font-size: 3em;
 	padding: .5em 0;
 }
@@ -153,11 +154,11 @@ h3 {
 	text-align: left;
 	font-size: 2.0em;
 }
-h3.choices  {
+h2.choices  {
 	text-align: center;
 	font-size: 1.5em;
 }
-.true-story h3 {
+.true-story h2 {
 	font-weight: normal;
 	font-size: 1.5em;
 	text-align:center;
@@ -679,7 +680,8 @@ input[type="submit"] {
 	
 	/* Up the font size for headings */
 	
-	h1 {
+	h1,
+	#nav h2 {
 		font-size: 6.5em;
 	}
 	#whatdoyouthink h1 {
@@ -688,17 +690,17 @@ input[type="submit"] {
 	h2 {
 		font-size: 2.5em;
 	}
-	h3.choices  {
+	h2.choices  {
 		font-size: 3em;
 		text-align: left;
 	}
 
-	.true-story h3,
+	.true-story h2,
 	.more-images h3 {
 		font-weight: normal;
 		
 	}
-	.true-story h3 {
+	.true-story h2 {
 		font-size: 3em;
 		text-align: left;
 	}
