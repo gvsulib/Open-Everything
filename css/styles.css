@@ -143,16 +143,23 @@ h2 {
 	padding: .4em 0 .7em;
 	line-height: 1.2em;
 }
-h3 {
+h3,
+#moreresources h2 {
 	font-weight: bold;
 	font-size: 1.8em;
 	padding: .8em 0;
+}
+#moreresources h2 {
+	text-transform: none;
 }
 #nav h3 {
 	text-transform: uppercase;
 	font-weight: normal;
 	text-align: left;
 	font-size: 2.0em;
+}
+h3#hostyourown {
+	font-weight: normal;
 }
 h2.choices  {
 	text-align: center;
@@ -696,7 +703,7 @@ input[type="submit"] {
 	}
 
 	.true-story h2,
-	.more-images h3 {
+	.more-images h2 {
 		font-weight: normal;
 		
 	}
