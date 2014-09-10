@@ -87,7 +87,15 @@ p small {
 	line-height: .5em;
 }
 a { 
-	color: #fff; 
+		color: #fff;
+		text-decoration: none;
+		border-bottom: 1px solid #fff;
+		padding-bottom: .25em;
+}
+a:active,
+a:hover {
+  position: relative;
+  top: 1px;
 }
 img {
 	max-width: 100%;
@@ -518,12 +526,17 @@ input[type="submit"] {
 	padding-top: 1.5em;
 	border-top: 1px dotted #fff;
 }
+#nav {
+	padding-top: 3em;
+}
 #nav .primary-links {
 	margin: 1.5em 0 3em;
 }
-#nav .secondary-links {
-	margin: 1.5em 0 3em;
+#nav .secondary-links li {
+	margin: 1em 0 1em 1em;
+	float: none;
 }
+
 #access {
 	background: #fd8303 url(../img/oe-access-small.png) 100% -.25em no-repeat;
 }
@@ -690,6 +703,10 @@ input[type="submit"] {
 		}
 		#nav #books-nav .choice {
 			background: #cf409a url(../img/oe-books-tiny.png) 105% -.25em no-repeat;
+		}
+		#nav .secondary-links li {
+			margin: 1em .5em;
+			float: left;
 		}
 }
 

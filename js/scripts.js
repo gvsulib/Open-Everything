@@ -106,9 +106,19 @@ $(document).ready(function() {
 	slowScroll('#code a.nextpanel', 'books');
 	slowScroll('#books a.nextpanel', 'data');
 	slowScroll('#data a.nextpanel', 'whatdoyouthink');
-	slowScroll('#intro a.nextpanel', 'access');
+	slowScroll('#intro a.nextpanel', 'nav-heading');
 	slowScroll('#moreresources a.nextpanel', 'exhibit');
 	slowScroll('#whatdoyouthink a.nextpanel', 'moreresources');
+	slowScroll('#nav #access-nav a', 'access');
+	slowScroll('#nav #books-nav a', 'books');
+	slowScroll('#nav #code-nav a', 'code');
+	slowScroll('#nav #data-nav a', 'data');
+	slowScroll('#nav .secondary-links a#hostlink', 'hostyourown');
+	slowScroll('#nav .secondary-links a#interactlink', 'whatdoyouthink');
+	slowScroll('#nav .secondary-links a#learnmorelink', 'moreresources');
+	slowScroll('#nav .secondary-links a#aboutlink', 'exhibit');
+	
+	
 	
 	function slowScroll(trigger, destination) {
 		document.querySelector(trigger).addEventListener("click", function(e) {
