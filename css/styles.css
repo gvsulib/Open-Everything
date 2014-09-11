@@ -192,7 +192,7 @@ a.choice {
 .opacity #whatdoyouthink label { 
 	height: auto; 
 	width: 80%; 
-	padding: 1em 5%; 
+	padding: 1em 5% 1em; 
 	margin: 0 auto; 
 	border: 1px solid #fff; 
 	transition: background-color 0.4s ease;
@@ -603,6 +603,11 @@ input[type="submit"] {
 	#whatdoyouthink label,
 	#whatdoyouthink label.oe-ia-selected { 
 		min-height: 8em;
+	}
+	.opacity #whatdoyouthink label,
+	.opacity #whatdoyouthink label.oe-ia-selected {
+		min-height: 6em;
+		padding-top: 2em;
 	}	
 	.left{
 		float:left;
@@ -653,8 +658,6 @@ input[type="submit"] {
 
 @media screen and (min-width: 40em) {
 	
-
-	
 	/* Increase the padding on the text elements, match question slideshow */
 	
 	.oe-panel { 
@@ -673,13 +676,16 @@ input[type="submit"] {
 	.cssanimations #question-slider h2.q0 {
 		height: 2.5em !important; 	
 	}
-	a.choice,
-	#whatdoyouthink label { 
+	a.choice { 
 		min-height: 6em;
 	}
 	#whatdoyouthink label,
 	#whatdoyouthink label.oe-ia-selected { 
 		min-height: 10em;
+	}
+	.opacity #whatdoyouthink label,
+	.opacity #whatdoyouthink label.oe-ia-selected {
+		min-height: 9em;
 	}
 }
 
@@ -797,9 +803,13 @@ input[type="submit"] {
 	#question-slider h2.q0 {
 		height: 1.5em !important; 	
 	}
-	#whatdoyouthink a.choice,
-	#whatdoyouthink a.oe-ia-selected { 
+	#whatdoyouthink label,
+	#whatdoyouthink label.oe-ia-selected { 
 		min-height: 7em;
+	}
+	.opacity #whatdoyouthink label,
+	.opacity #whatdoyouthink label.oe-ia-selected {
+		min-height: 6em;
 	}
 	#nav h3 {
 		font-size: 1.9em;
