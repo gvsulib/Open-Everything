@@ -120,6 +120,7 @@ h2.choices  {
 
 #whatdoyouthink label,
 #whatdoyouthink label.oe-ia-selected { 
+	display: block;
 	min-height: 7em;
 }
 .opacity #whatdoyouthink label,
