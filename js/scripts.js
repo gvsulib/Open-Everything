@@ -138,9 +138,6 @@ $(document).ready(function() {
 	slowScroll('#nav #books-nav a', 'books');
 	slowScroll('#nav #code-nav a', 'code');
 	slowScroll('#nav #data-nav a', 'data');
-	slowScroll('#nav .secondary-links a#hostlink', 'hostyourown');
-	slowScroll('#nav .secondary-links a#interactlink', 'whatdoyouthink');
-	slowScroll('#nav .secondary-links a#learnmorelink', 'moreresources');
 	slowScroll('#nav .secondary-links a#aboutlink', 'exhibit');
 	
 	

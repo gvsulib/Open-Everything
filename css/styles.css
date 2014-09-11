@@ -562,8 +562,9 @@ input[type="submit"] {
 	margin: 1.5em 0 3em;
 }
 #nav .secondary-links li {
-	margin: 1em 0 1em 1em;
-	float: none;
+	margin: 1em 0;
+	font-size: .9em;
+	text-align:center;
 }
 #access {
 	background: #cc4d00 url(../img/oe-access-small.png) 100% -.25em no-repeat;
@@ -651,6 +652,11 @@ body {
 	}
 	.right{
 		float:right;
+	}
+	#nav .secondary-links li a {
+		display: block;
+		text-align:right;
+		margin-right: 2%;
 	}
 	#code {
 		background: #2B8832 url(../img/oe-code-small.png) 110% -.4em no-repeat;
@@ -790,8 +796,7 @@ body {
 		background: #cf407a url(../img/oe-books-tiny.png) 105% -.25em no-repeat;
 	}
 	#nav .secondary-links li {
-		margin: 1em .5em;
-		float: left;
+		margin: 1em 0;
 	}
 	.modal {
 	    left: 21%;
