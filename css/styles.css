@@ -129,6 +129,7 @@ h6 span,
 .definition span {
 	font-weight: bold;
 }
+
 h1 span,
 #nav h3 span {
 	display: block;
@@ -137,6 +138,9 @@ h1,
 #nav h2 {
 	font-size: 3em;
 	padding: .5em 0;
+}
+#intro h1 {
+	min-height: 3.5em;
 }
 h2 {
 	font-size: 1.75em;
@@ -414,30 +418,25 @@ input[type="submit"] {
 }
 
 #question-slider {
-  	position:relative;
+  position:relative;
   	width:106%;
-	height: 4em;
 	text-align: center;
-  	margin: 2em 0 3em -3%;
-	margin-bottom: 3em;
-}
-.cssanimations {
-	height: 4em;
+  	margin-left: -3%;
+	height: 10em; 
 }
 
 #question-slider h2 {
 	width: 100%; 	
 }
-.cssanimations #question-slider h2.q0 {
+/*.cssanimations #question-slider h2.q0 {
 	height: 3.5em !important; 	
-}
+}*/
 .cssanimations #question-slider h2 {
 	position:absolute;
 	left:0;
-	top: 50%;
+	/*top: 50%;*/
 	transform: translate(0, -50%);
-	height: 100%;
-
+	height: 4.4em;
 }
 
 .cssanimations #question-slider h2 {
@@ -503,7 +502,9 @@ input[type="submit"] {
   -o-animation-delay: 0;
   animation-delay: 0;
 }
-
+.more-images img {
+	width: 100%;
+}
 .footer {
 	background-color: #575757; 
 	color: #efefef;
@@ -597,7 +598,8 @@ input[type="submit"] {
 #hostyourown {
 	margin-top: 2em;
 }
-#exhibit {
+#exhibit,
+body {
 	position: relative;
 }
 .lightbox {
@@ -630,6 +632,12 @@ input[type="submit"] {
 		width:49%;
 		padding:.5em 1% .5em 0;
 	}
+	.cssanimations #question-slider {
+		height: 5em;
+	}
+	.cssanimations #question-slider h2 {
+		height: 2em;
+	}
 	#whatdoyouthink label,
 	#whatdoyouthink label.oe-ia-selected { 
 		min-height: 8em;
@@ -652,14 +660,14 @@ input[type="submit"] {
 		background: #cf407a url(../img/oe-books-small.png) 120% -.3em no-repeat;
 	}
 	#nav #code-nav .choice {
-			background: #2B8800 url(../img/oe-code-tiny.png) 140% -.25em no-repeat;
-		}
-		#nav #books-nav .choice {
-			background: #cf407a url(../img/oe-books-tiny.png) 155% -.25em no-repeat;
-		}
-		#nav h3 {
-			font-size: 1.6em;
-		}
+		background: #2B8800 url(../img/oe-code-tiny.png) 140% -.25em no-repeat;
+	}
+	#nav #books-nav .choice {
+		background: #cf407a url(../img/oe-books-tiny.png) 155% -.25em no-repeat;
+	}
+	#nav h3 {
+		font-size: 1.6em;
+	}
 }
 
 @media screen and (min-width: 34.375em) {
@@ -679,11 +687,11 @@ input[type="submit"] {
 	}
 	
 	#nav #code-nav .choice {
-			background: #2B8800 url(../img/oe-code-tiny.png) 120% -.25em no-repeat;
-		}
-		#nav #books-nav .choice {
-			background: #cf407a url(../img/oe-books-tiny.png) 115% -.25em no-repeat;
-		}
+		background: #2B8800 url(../img/oe-code-tiny.png) 120% -.25em no-repeat;
+	}
+	#nav #books-nav .choice {
+		background: #cf407a url(../img/oe-books-tiny.png) 115% -.25em no-repeat;
+	}
 }
 
 @media screen and (min-width: 40em) {
@@ -693,9 +701,15 @@ input[type="submit"] {
 	.oe-panel { 
 		padding: 0 10% 1em; 
 	}
+	#intro h1 {
+		min-height: 3em;
+	}
 	#question-slider {
 		margin-left: -13%;
 		width: 125.5%;
+	}
+	.cssanimations #question-slider {
+		height: 3em;
 	}
 	.cssanimations #question-slider h2 {
 		height: 1.5em;
@@ -727,6 +741,9 @@ input[type="submit"] {
 	#nav h2 {
 		font-size: 6.5em;
 	}
+	#intro h1 {
+		min-height: 2.5em;
+	}
 	#whatdoyouthink h1 {
 		font-size: 4.5em;
 	}
@@ -752,7 +769,7 @@ input[type="submit"] {
 		padding: 2em 10%;
 	}
 	.cssanimations #question-slider {
-		height: 10em;
+		height: 6em;
 	}
 	.cssanimations #question-slider h2 {
 		height: 2em;
@@ -821,7 +838,7 @@ input[type="submit"] {
 @media screen and (min-width:57.8125em) {
 	
 	.cssanimations #question-slider {
-		height: 8.5em;
+		height: 5em;
 	}
 	.cssanimations #question-slider h2 {
 		height: 1.5em;
