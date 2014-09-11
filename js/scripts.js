@@ -7,12 +7,11 @@ $(document).ready(function() {
 	
 	// The old Kindle Fire browser is bad at showing position: fixed.
 	// I don't want to run the lightbox on Kindle Fire
-	var agent = navigator.userAgent, isKindle = 0,kindleFire1 = 'Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; Kindle Fire Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1', kindleFire2 = 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en-us; Silk/1.1.0-80) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16 Silk-Accelerated=true';
-	console.log(agent);
-	
-	if((agent == kindleFire1) || (agent == kindleFire2)) {
+	var match = /\bSilk\/(.*\bMobile Safari\b)?/.exec(navigator.userAgent), isKindle = 0;
+	if (match) {
 		isKindle = 1;
-	}
+		alert("Detected Silk in mode "+(isKindle[1] ? "Mobile" : "Default (desktop)"));
+	} 
 	
 	console.log(isKindle);
 
