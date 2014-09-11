@@ -569,13 +569,13 @@ input[type="submit"] {
 	background: #cc4d00 url(../img/oe-access-small.png) 100% -.25em no-repeat;
 }
 #code {
-	background: #2B8800 url(../img/oe-code-small.png) 130% -1.7em no-repeat;
+	background: #2B8800 url(../img/oe-code-small.png) 140% -2em no-repeat;
 }
 #data {
 	background: #2A7CB7 url(../img/oe-data-small.png) 101% -.3em no-repeat;
 }
 #books {
-	background: #cf407a url(../img/oe-books-small.png) 150% -2.1em no-repeat;
+	background: #cf407a url(../img/oe-books-small.png) 150% -2.5em no-repeat;
 }
 #nav #code-nav .choice {
 		background: #2B8800 url(../img/oe-code-tiny.png) 102% -.25em no-repeat;
