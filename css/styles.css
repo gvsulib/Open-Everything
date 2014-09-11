@@ -512,12 +512,12 @@ input[type="submit"] {
 .modal {
 	display: block;
     position: fixed; 
-    left: 25%;
-    top: 40%; 
-    padding: .75em 1.6em 1.6em; 
+    left: 1%;
+    top: 30%; 
+    padding: .75em 4% 1.6em; 
     border: 1px solid #fff;
     background-color: #2A7CB7;
-    width: 50%;
+    width: 90%;
     height: 10em;
     z-index: 100;
 }
@@ -533,7 +533,7 @@ input[type="submit"] {
 	margin-top: .9em;
 	display: inline-block;
 }
-#fade {
+.fade {
     display: none;  
     position: absolute; 
     left: 0%; 
@@ -738,15 +738,19 @@ input[type="submit"] {
 		background: #2A7CB7 url(../img/oe-data.png) 101% -.3em no-repeat;
 	}
 	#nav #code-nav .choice {
-			background: #2B8800 url(../img/oe-code-tiny.png) 105% -.25em no-repeat;
-		}
-		#nav #books-nav .choice {
-			background: #cf407a url(../img/oe-books-tiny.png) 105% -.25em no-repeat;
-		}
-		#nav .secondary-links li {
-			margin: 1em .5em;
-			float: left;
-		}
+		background: #2B8800 url(../img/oe-code-tiny.png) 105% -.25em no-repeat;
+	}
+	#nav #books-nav .choice {
+		background: #cf407a url(../img/oe-books-tiny.png) 105% -.25em no-repeat;
+	}
+	#nav .secondary-links li {
+		margin: 1em .5em;
+		float: left;
+	}
+	.modal {
+	    left: 21%;
+	    width: 50%;
+	}
 }
 
 @media screen and (min-width: 56.25em) {

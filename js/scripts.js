@@ -53,13 +53,13 @@ $(document).ready(function() {
 			textBox.prepend('<p><i>' + questionText + '</i></p>');
 			textBox.append('<span class="cancel">Cancel</span>&nbsp;<span class="submit oe-purple">Tell Us</span>');
 			textBox.addClass('modal').show();
-			$("#fade").css('display','block');
+			$('#whatdoyouthink').find(".fade").css('display','block');
 			$("#whatdoyouthink").css('position','relative');
 			
 			// Add a close button handler
 			$("#whatdoyouthink").find('.modal').find('.cancel').click(function() {
 				$(this).closest('div.textarea').hide();
-				$('#fade').hide();
+				$('#whatdoyouthink').find('.fade').hide();
 			});
 			
 			// Set click handler for recording
@@ -68,7 +68,7 @@ $(document).ready(function() {
 				var answerChoice = questionText + $(this).parent('div.textarea').find('textarea').val();
 				$(this).parent('div').parent('li').find('label').removeClass('choice').addClass('oe-ia-selected').text(answerChoice);
 				$(this).closest('div.textarea').hide();
-				$('#fade').hide();
+				$('#whatdoyouthink').find('.fade').hide();
 				$.ajax({ url: 'record.php',
 				         data: {time: rightNow, answer: answerChoice},
 				         type: 'post',
