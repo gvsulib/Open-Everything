@@ -565,7 +565,6 @@ input[type="submit"] {
 	margin: 1em 0 1em 1em;
 	float: none;
 }
-
 #access {
 	background: #cc4d00 url(../img/oe-access-small.png) 100% -.25em no-repeat;
 }
@@ -576,7 +575,7 @@ input[type="submit"] {
 	background: #2A7CB7 url(../img/oe-data-small.png) 101% -.3em no-repeat;
 }
 #books {
-	background: #cf407a url(../img/oe-books-small.png) 134% -.3em no-repeat;
+	background: #cf407a url(../img/oe-books-small.png) 150% -1.3em no-repeat;
 }
 #nav #code-nav .choice {
 		background: #2B8800 url(../img/oe-code-tiny.png) 102% -.25em no-repeat;
