@@ -124,6 +124,7 @@ h2.choices  {
 	line-height: 1.8em;
 	min-height: 7em;
 	padding-top: 2em;
+	text-align: center;
 }
 .opacity #whatdoyouthink label,
 .opacity #whatdoyouthink label.oe-ia-selected {
@@ -133,10 +134,10 @@ h2.choices  {
 	font-size: 1.9em;
 }
 #nav #code-nav .choice {
-		background: #2B8800 url(../img/oe-code-tiny.png) 110% -1.25em no-repeat;
+		background: #2B8800 url(../img/oe-code-tiny.png) 180% -1.25em no-repeat;
 }
 #nav #books-nav .choice {
-	background: #cf407a url(../img/oe-books-tiny.png) 125% -.25em no-repeat;
+	background: #cf407a url(../img/oe-books-tiny.png) 180% -.25em no-repeat;
 }
 .answer {
 	margin-top: 1em;
