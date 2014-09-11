@@ -597,6 +597,9 @@ input[type="submit"] {
 #hostyourown {
 	margin-top: 2em;
 }
+#exhibit {
+	position: relative;
+}
 .lightbox {
 	position:fixed;
 }
