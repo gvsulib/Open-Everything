@@ -10,7 +10,6 @@ $(document).ready(function() {
 	var match = /\bSilk\/(.*\bMobile Safari\b)?/.exec(navigator.userAgent), isKindle = 0;
 	if (match) {
 		isKindle = 1;
-		alert("Detected Silk in mode "+(isKindle[1] ? "Mobile" : "Default (desktop)"));
 	} 
 	
 	console.log(isKindle);
