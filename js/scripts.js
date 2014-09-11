@@ -93,6 +93,20 @@ $(document).ready(function() {
 		}
 	});
 	
+	// Lightbox effect on final images	
+	$(".js").find(".more-images").find("a").click(function(e) {
+		e.preventDefault();
+		var path = $(this).attr("href"), altText = $(this).attr("alt");
+		$('.more-images').append('<div class="lightbox"></div><div class="lightbox-close">[Close]</div><img src="' + path + '" alt="' + altText + '" class="lightbox-img" />');
+		$('.lightbox').show();
+		
+		$('.lightbox-close').click(function() {
+			$('.lightbox').remove();
+			$('.lightbox-img').remove();
+			$('.lightbox-close').remove();
+		});
+	});
+	
 	
 	// Setup for slow scroll
 	var root = /firefox|trident/i.test(navigator.userAgent) ? document.documentElement : document.body;
