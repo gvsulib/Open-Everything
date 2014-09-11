@@ -34,7 +34,7 @@ $(document).ready(function() {
 	});
 	
 	
-	/*
+	
 	// If JS is available, make the interaction stuff better
 	
 	$('form').find('input[type="submit"]').hide();
@@ -101,7 +101,7 @@ $(document).ready(function() {
 			});
 		}
 	});
-	*/
+	
 	
 	// Lightbox effect on final images for all browsers except for Kindle Fire 1st gen
 	if(isKindle == 0) {
