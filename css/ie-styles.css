@@ -136,3 +136,6 @@ h2.choices  {
 #nav #books-nav .choice {
 	background: #cf407a url(../img/oe-books-tiny.png) 125% -.25em no-repeat;
 }
+.answer {
+	margin-top: 1em;
+}
