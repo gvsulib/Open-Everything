@@ -225,7 +225,7 @@ a.choice {
 	background-color: #2A7CB7; /* Original - #2aace3 made more accessible */ 
 }
 .oe-green { 
-	background-color: #2B8800; /* Original - #2bb673 made more accessible */ 
+	background-color: #2B8832; /* Original - 2B8832#2bb673 made more accessible */ 
 }
 .oe-purple { 
 	background-color: #2e3192; 
@@ -569,7 +569,7 @@ input[type="submit"] {
 	background: #cc4d00 url(../img/oe-access-small.png) 100% -.25em no-repeat;
 }
 #code {
-	background: #2B8800 url(../img/oe-code-small.png) 140% -2em no-repeat;
+	background: #2B8832 url(../img/oe-code-small.png) 140% -2em no-repeat;
 }
 #data {
 	background: #2A7CB7 url(../img/oe-data-small.png) 101% -.3em no-repeat;
@@ -578,7 +578,7 @@ input[type="submit"] {
 	background: #cf407a url(../img/oe-books-small.png) 150% -2.5em no-repeat;
 }
 #nav #code-nav .choice {
-		background: #2B8800 url(../img/oe-code-tiny.png) 102% -.25em no-repeat;
+		background: #2B8832 url(../img/oe-code-tiny.png) 102% -.25em no-repeat;
 }
 #nav #access-nav .choice {
 	background: #cc4d00 url(../img/oe-access-tiny.png) 102% -.25em no-repeat;
@@ -653,13 +653,13 @@ body {
 		float:right;
 	}
 	#code {
-		background: #2B8800 url(../img/oe-code-small.png) 110% -.4em no-repeat;
+		background: #2B8832 url(../img/oe-code-small.png) 110% -.4em no-repeat;
 	}
 	#books {
 		background: #cf407a url(../img/oe-books-small.png) 120% -.3em no-repeat;
 	}
 	#nav #code-nav .choice {
-		background: #2B8800 url(../img/oe-code-tiny.png) 140% -.25em no-repeat;
+		background: #2B8832 url(../img/oe-code-tiny.png) 140% -.25em no-repeat;
 	}
 	#nav #books-nav .choice {
 		background: #cf407a url(../img/oe-books-tiny.png) 155% -.25em no-repeat;
@@ -679,14 +679,14 @@ body {
 		padding:.5em 1% .5em 0;
 	}
 	#code {
-		background: #2B8800 url(../img/oe-code-small.png) 102% -.4em no-repeat;
+		background: #2B8832 url(../img/oe-code-small.png) 102% -.4em no-repeat;
 	}
 	#books {
 		background: #cf407a url(../img/oe-books-small.png) 104% -.3em no-repeat;
 	}
 	
 	#nav #code-nav .choice {
-		background: #2B8800 url(../img/oe-code-tiny.png) 120% -.25em no-repeat;
+		background: #2B8832 url(../img/oe-code-tiny.png) 120% -.25em no-repeat;
 	}
 	#nav #books-nav .choice {
 		background: #cf407a url(../img/oe-books-tiny.png) 115% -.25em no-repeat;
@@ -777,14 +777,14 @@ body {
 		background: #cc4d00 url(../img/oe-access.png) 100% -.1em no-repeat;
 	}
 	#code {
-		background: #2B8800 url(../img/oe-code.png) 100% -.1em no-repeat;
+		background: #2B8832 url(../img/oe-code.png) 100% -.1em no-repeat;
 	}
 
 	#data {
 		background: #2A7CB7 url(../img/oe-data.png) 101% -.3em no-repeat;
 	}
 	#nav #code-nav .choice {
-		background: #2B8800 url(../img/oe-code-tiny.png) 105% -.25em no-repeat;
+		background: #2B8832 url(../img/oe-code-tiny.png) 105% -.25em no-repeat;
 	}
 	#nav #books-nav .choice {
 		background: #cf407a url(../img/oe-books-tiny.png) 105% -.25em no-repeat;
@@ -824,7 +824,7 @@ body {
 		background: #cf407a url(../img/oe-books.png) 110% -.3em no-repeat;
 	}
 	#nav #code-nav .choice {
-			background: #2B8800 url(../img/oe-code-tiny.png) 200% -1.75em no-repeat;
+			background: #2B8832 url(../img/oe-code-tiny.png) 200% -1.75em no-repeat;
 	}
 	#nav #books-nav .choice {
 		background: #cf407a url(../img/oe-books-tiny.png) 250% -.25em no-repeat;
@@ -851,7 +851,7 @@ body {
 		background: #cf407a url(../img/oe-books.png) 102% -.3em no-repeat;
 	}
 	#nav #code-nav .choice {
-			background: #2B8800 url(../img/oe-code-tiny.png) 130% -1.75em no-repeat;
+			background: #2B8832 url(../img/oe-code-tiny.png) 130% -1.75em no-repeat;
 	}
 	#nav #books-nav .choice {
 		background: #cf407a url(../img/oe-books-tiny.png) 175% -.25em no-repeat;
@@ -883,7 +883,7 @@ body {
 		font-size: 1.9em;
 	}
 	#nav #code-nav .choice {
-			background: #2B8800 url(../img/oe-code-tiny.png) 110% -1.25em no-repeat;
+			background: #2B8832 url(../img/oe-code-tiny.png) 110% -1.25em no-repeat;
 	}
 	#nav #books-nav .choice {
 		background: #cf407a url(../img/oe-books-tiny.png) 125% -.25em no-repeat;

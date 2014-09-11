@@ -80,7 +80,7 @@ h2.choices  {
 	background: #cc4d00 url(../img/oe-access.png) 100% -.1em no-repeat;
 }
 #code {
-	background: #2B8800 url(../img/oe-code.png) 100% -.1em no-repeat;
+	background: #2B8832 url(../img/oe-code.png) 100% -.1em no-repeat;
 }
 
 #data {
@@ -138,7 +138,7 @@ h2.choices  {
 	font-size: 1.9em;
 }
 #nav #code-nav .choice {
-		background: #2B8800 url(../img/oe-code-tiny.png) 150% -1.25em no-repeat;
+		background: #2B8832 url(../img/oe-code-tiny.png) 150% -1.25em no-repeat;
 }
 #nav #books-nav .choice {
 	background: #cf407a url(../img/oe-books-tiny.png) 150% -1.25em no-repeat;
