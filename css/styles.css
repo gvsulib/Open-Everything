@@ -186,14 +186,14 @@ a.choice {
 	text-decoration: none; 
 	line-height: 1.8em;
 }
-.opacity #whatdoyouthink label {
+.js.opacity #whatdoyouthink label {
 	display: block;
 	cursor: pointer;
 	text-align:center; 
 	line-height: 1.8em;
 }
 .opacity a.choice,
-.opacity #whatdoyouthink label { 
+.js.opacity #whatdoyouthink label { 
 	height: auto; 
 	width: 80%; 
 	padding: 1em 5% 1em; 
@@ -202,7 +202,7 @@ a.choice {
 	transition: background-color 0.4s ease;
 }
 .opacity a.choice:hover,
-.opacity #whatdoyouthink label:hover { 
+.js.opacity #whatdoyouthink label:hover { 
 	background-color: #2e3192; 
 }
 .center { 
@@ -638,12 +638,12 @@ body {
 	.cssanimations #question-slider h2 {
 		height: 2em;
 	}
-	#whatdoyouthink label,
-	#whatdoyouthink label.oe-ia-selected { 
+	.js #whatdoyouthink label,
+	.js #whatdoyouthink label.oe-ia-selected { 
 		min-height: 8em;
 	}
-	.opacity #whatdoyouthink label,
-	.opacity #whatdoyouthink label.oe-ia-selected {
+	.opacity.js #whatdoyouthink label,
+	.opacity.js #whatdoyouthink label.oe-ia-selected {
 		min-height: 6em;
 		padding-top: 2em;
 	}	
@@ -728,12 +728,12 @@ body {
 	a.choice { 
 		min-height: 6em;
 	}
-	#whatdoyouthink label,
-	#whatdoyouthink label.oe-ia-selected { 
+	.js #whatdoyouthink label,
+	.js #whatdoyouthink label.oe-ia-selected { 
 		min-height: 10em;
 	}
-	.opacity #whatdoyouthink label,
-	.opacity #whatdoyouthink label.oe-ia-selected {
+	.js.opacity #whatdoyouthink label,
+	.js.opacity #whatdoyouthink label.oe-ia-selected {
 		min-height: 9em;
 	}
 }
@@ -876,12 +876,12 @@ body {
 	#question-slider h2.q0 {
 		height: 1.5em !important; 	
 	}
-	#whatdoyouthink label,
-	#whatdoyouthink label.oe-ia-selected { 
+	.js #whatdoyouthink label,
+	.js #whatdoyouthink label.oe-ia-selected { 
 		min-height: 7em;
 	}
-	.opacity #whatdoyouthink label,
-	.opacity #whatdoyouthink label.oe-ia-selected {
+	.js.opacity #whatdoyouthink label,
+	.js.opacity #whatdoyouthink label.oe-ia-selected {
 		min-height: 6em;
 	}
 	#nav h3 {
