@@ -34,9 +34,13 @@ for GVSU Libraries 2014
 #question-slider {
 	margin-left: -13%;
 	width: 125.5%;
+	position: static;
+	height: auto;
 }
 #question-slider h2 {
+	position: static;
 	padding: .7em 0 .5em;
+	height: auto;
 }
 a.choice { 
 	min-height: 6em;
