@@ -1,0 +1,138 @@
+/* 
+Styles for Internet Explorer 8 and below.
+Because it cannot do internet.
+
+by Matthew Reidsma
+for GVSU Libraries 2014
+*/
+
+.span4{
+	width:24%;
+	padding:.5em 1% .5em 0;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.span3{
+	width:32%;
+	padding:.5em 1% .5em 0;
+}
+.span2of3{
+	width:65%;
+	padding:.5em 1% .5em 0;
+}
+#books {
+	background: #cf407a url(../img/oe-books-small.png) 104% -.3em no-repeat;
+}
+
+.oe-panel { 
+	padding: 0 10% 1em; 
+}
+#question-slider {
+	margin-left: -13%;
+	width: 125.5%;
+}
+#question-slider h2 {
+	padding: .7em 0 .5em;
+}
+a.choice { 
+	min-height: 6em;
+}
+h1,
+#nav h2 {
+	font-size: 6.5em;
+}
+#intro h1 {
+	min-height: 2.5em;
+}
+#whatdoyouthink h1 {
+	font-size: 4.5em;
+}
+h2 {
+	font-size: 2.5em;
+}
+h2.choices  {
+	font-size: 3em;
+	text-align: left;
+}
+
+.true-story h2,
+.more-images h2 {
+	font-weight: normal;
+	
+}
+.true-story h2 {
+	font-size: 3em;
+	text-align: left;
+}
+.quote { 
+	font-size: 2.5em; 
+	padding: 2em 10%;
+}
+#access {
+	background: #cc4d00 url(../img/oe-access.png) 100% -.1em no-repeat;
+}
+#code {
+	background: #2B8800 url(../img/oe-code.png) 100% -.1em no-repeat;
+}
+
+#data {
+	background: #2A7CB7 url(../img/oe-data.png) 101% -.3em no-repeat;
+}
+#nav .secondary-links li {
+	margin: 1em .5em;
+	float: left;
+}
+.modal {
+    left: 21%;
+    width: 50%;
+}
+.span2{
+	width:49%;
+	padding:.5em 1% .5em 0;
+}
+.span3of4{
+	width:74%;
+	padding:.5em 1% .5em 0;
+}
+.cssanimations #question-slider {
+	height: 5em;
+}
+.cssanimations #question-slider h2 {
+	height: 1.5em;
+}
+
+#books {
+	background: #cf407a url(../img/oe-books.png) 102% -.3em no-repeat;
+}
+.lightbox-img {
+	top: 5%;
+	left: 15%;
+	width: 68%;
+}
+.lightbox-close {
+	top: 5%;
+	right: 15%;
+}
+
+#whatdoyouthink label,
+#whatdoyouthink label.oe-ia-selected { 
+	min-height: 7em;
+}
+.opacity #whatdoyouthink label,
+.opacity #whatdoyouthink label.oe-ia-selected {
+	min-height: 6em;
+	padding-top: 2em;
+}
+#nav h3 {
+	font-size: 1.9em;
+}
+#nav #code-nav .choice {
+		background: #2B8800 url(../img/oe-code-tiny.png) 110% -1.25em no-repeat;
+}
+#nav #books-nav .choice {
+	background: #cf407a url(../img/oe-books-tiny.png) 125% -.25em no-repeat;
+}
