@@ -121,12 +121,13 @@ h2.choices  {
 #whatdoyouthink label,
 #whatdoyouthink label.oe-ia-selected { 
 	display: block;
+	line-height: 1.8em;
 	min-height: 7em;
+	padding-top: 2em;
 }
 .opacity #whatdoyouthink label,
 .opacity #whatdoyouthink label.oe-ia-selected {
 	min-height: 6em;
-	padding-top: 2em;
 }
 #nav h3 {
 	font-size: 1.9em;
