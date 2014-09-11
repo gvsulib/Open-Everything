@@ -97,7 +97,7 @@ $(document).ready(function() {
 	$(".js").find(".more-images").find("a").click(function(e) {
 		e.preventDefault();
 		var path = $(this).attr("href"), altText = $(this).attr("alt");
-		$('.more-images').append('<div class="lightbox"></div><div class="lightbox-close">[Close]</div><img src="' + path + '" alt="' + altText + '" class="lightbox-img" />');
+		$('body').append('<div class="lightbox"></div><div class="lightbox-close">[Close]</div><img src="' + path + '" alt="' + altText + '" class="lightbox-img" />');
 		$('.lightbox').show();
 		
 		$('.lightbox-close').click(function() {
