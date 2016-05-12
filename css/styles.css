@@ -87,9 +87,8 @@ p small {
 	line-height: .5em;
 }
 a { 
-		color: #fff;
-		text-decoration: none;
-		border-bottom: 1px solid #fff;
+		color: #2e3192;
+		text-decoration: underline;
 		padding-bottom: .25em;
 }
 a:active,
@@ -181,6 +180,7 @@ h2.choices  {
 	font-size: 1.5em;
 }
 a.choice {
+	color: #fff !important;
 	display: block;
 	text-align:center; 
 	text-decoration: none; 
@@ -198,12 +198,13 @@ a.choice {
 	width: 80%; 
 	padding: 1em 5% 1em; 
 	margin: 0 auto; 
-	border: 1px solid #fff; 
+	border: 1px solid #bbb; 
 	transition: background-color 0.4s ease;
 }
 .opacity a.choice:hover,
 .js.opacity #whatdoyouthink label:hover { 
 	background-color: #2e3192; 
+	color: #fff;
 }
 .center { 
 	text-align: center;
@@ -212,23 +213,37 @@ a.choice {
 	margin-top: 1.5em; 
 }
 .oe-panel { 
-	color: #fff; 
+	color: #333; 
 	padding: 0 3% 1em; 
 }
 .oe-orange { 
-	background-color:  #cc4d00; /* Original - #fd8303 made more accessible */ 
+	background-color: #fff;
 }
-.oe-fuschia { 
-	background-color: #cf407a; /* Original - #cf409a made more accessible */ 
+.oe-orange h1,
+.oe-orange h2 {
+	color: #cc4d00;
 }
-.oe-blue { 
-	background-color: #2A7CB7; /* Original - #2aace3 made more accessible */ 
+.oe-fuschia h1,
+.oe-fuschia h2
+ { 
+	color: #cf407a; /* Original - #cf409a made more accessible */ 
 }
-.oe-green { 
-	background-color: #2B8832; /* Original - 2B8832#2bb673 made more accessible */ 
+.oe-blue h1,
+.oe-blue h2 { 
+	color: #2A7CB7; /* Original - #2aace3 made more accessible */ 
 }
-.oe-purple { 
-	background-color: #2e3192; 
+.oe-green h1,
+.oe-green h2 { 
+	color: #2B8832; /* Original - 2B8832#2bb673 made more accessible */ 
+}
+.oe-purple h1,
+.oe-purple h2 { 
+	color: #2e3192; 
+}
+
+#nav {
+	color: #fff;
+	background-color: #2e3192;
 }
 .oe-ia-selected {
 	/* Override other selections on interactive boxes */
@@ -302,6 +317,7 @@ a.choice {
 	text-shadow: 0 1px 0 #fff;
 	transition: .25s;
 	text-decoration: none;
+    font-size: 1em;
 }
 
 .nextpanel:hover { 
@@ -423,10 +439,13 @@ input[type="submit"] {
 	text-align: center;
   	margin-left: -3%;
 	height: 10em; 
+
 }
 
 #question-slider h2 {
-	width: 100%; 	
+	width: 100%; 
+	color: #fff !important;
+	background-color: #2e3192;	
 }
 /*.cssanimations #question-slider h2.q0 {
 	height: 3.5em !important; 	
@@ -510,6 +529,9 @@ input[type="submit"] {
 	color: #efefef;
 	padding: 1em 3%;
 }
+.footer a {
+	color: #eee;
+}
 .modal {
 	display: block;
     position: fixed; 
@@ -567,30 +589,46 @@ input[type="submit"] {
 	text-align:center;
 }
 #access {
-	background: #cc4d00 url(../img/oe-access-small.png) 100% -.25em no-repeat;
+	background: #fff;
 }
 #code {
-	background: #2B8832 url(../img/oe-code-small.png) 140% -2em no-repeat;
+	background: #fff;
 }
 #data {
-	background: #2A7CB7 url(../img/oe-data-small.png) 101% -.3em no-repeat;
+	background: #fff;
 }
 #books {
-	background: #cf407a url(../img/oe-books-small.png) 150% -2.5em no-repeat;
+	background: #fff;
 }
 #nav #code-nav .choice {
-		background: #2B8832 url(../img/oe-code-tiny.png) 102% -.25em no-repeat;
+		background: #2B8832;
 }
 #nav #access-nav .choice {
-	background: #cc4d00 url(../img/oe-access-tiny.png) 102% -.25em no-repeat;
+	background: #cc4d00;
 }
 
 #nav #books-nav .choice {
-	background: #cf407a url(../img/oe-books-tiny.png) 102% -.25em no-repeat;
+	background: #cf407a;
 }
 
 #nav #data-nav .choice {
-	background: #2A7CB7 url(../img/oe-data-tiny.png) 102% -.25em no-repeat;
+	background: #2A7CB7;
+}
+
+#access a.choice {
+	background-color: #cc4d00;
+}
+#code a.choice {
+	background-color: #2B8832;
+}
+#data a.choice {
+	background-color: #2A7CB7;
+}
+#books a.choice {
+	background-color: #cf407a;
+}
+a.choice.oe-purple {
+	background-color: #2e3192 !important;
 }
 .downloads {
 	margin: 4em 0;
@@ -658,18 +696,7 @@ body {
 		text-align:right;
 		margin-right: 2%;
 	}
-	#code {
-		background: #2B8832 url(../img/oe-code-small.png) 110% -.4em no-repeat;
-	}
-	#books {
-		background: #cf407a url(../img/oe-books-small.png) 120% -.3em no-repeat;
-	}
-	#nav #code-nav .choice {
-		background: #2B8832 url(../img/oe-code-tiny.png) 140% -.25em no-repeat;
-	}
-	#nav #books-nav .choice {
-		background: #cf407a url(../img/oe-books-tiny.png) 155% -.25em no-repeat;
-	}
+	
 	#nav h3 {
 		font-size: 1.6em;
 	}
@@ -684,19 +711,7 @@ body {
 		width:65%;
 		padding:.5em 1% .5em 0;
 	}
-	#code {
-		background: #2B8832 url(../img/oe-code-small.png) 102% -.4em no-repeat;
-	}
-	#books {
-		background: #cf407a url(../img/oe-books-small.png) 104% -.3em no-repeat;
-	}
 	
-	#nav #code-nav .choice {
-		background: #2B8832 url(../img/oe-code-tiny.png) 120% -.25em no-repeat;
-	}
-	#nav #books-nav .choice {
-		background: #cf407a url(../img/oe-books-tiny.png) 115% -.25em no-repeat;
-	}
 }
 
 @media screen and (min-width: 40em) {
@@ -779,22 +794,7 @@ body {
 	.cssanimations #question-slider h2 {
 		height: 2em;
 	}
-	#access {
-		background: #cc4d00 url(../img/oe-access.png) 100% -.1em no-repeat;
-	}
-	#code {
-		background: #2B8832 url(../img/oe-code.png) 100% -.1em no-repeat;
-	}
-
-	#data {
-		background: #2A7CB7 url(../img/oe-data.png) 101% -.3em no-repeat;
-	}
-	#nav #code-nav .choice {
-		background: #2B8832 url(../img/oe-code-tiny.png) 105% -.25em no-repeat;
-	}
-	#nav #books-nav .choice {
-		background: #cf407a url(../img/oe-books-tiny.png) 105% -.25em no-repeat;
-	}
+	
 	#nav .secondary-links li {
 		margin: 1em 0;
 	}
@@ -825,15 +825,7 @@ body {
 		width:74%;
 		padding:.5em 1% .5em 0;
 	}
-	#books {
-		background: #cf407a url(../img/oe-books.png) 110% -.3em no-repeat;
-	}
-	#nav #code-nav .choice {
-			background: #2B8832 url(../img/oe-code-tiny.png) 200% -1.75em no-repeat;
-	}
-	#nav #books-nav .choice {
-		background: #cf407a url(../img/oe-books-tiny.png) 250% -.25em no-repeat;
-	}
+	
 	#nav h3 {
 		font-size: 1.6em;
 	}
@@ -852,15 +844,7 @@ body {
 }
 
 @media screen and (min-width: 61em) {
-	#books {
-		background: #cf407a url(../img/oe-books.png) 102% -.3em no-repeat;
-	}
-	#nav #code-nav .choice {
-			background: #2B8832 url(../img/oe-code-tiny.png) 130% -1.75em no-repeat;
-	}
-	#nav #books-nav .choice {
-		background: #cf407a url(../img/oe-books-tiny.png) 175% -.25em no-repeat;
-	}
+	
 	.lightbox-img {
 		top: 5%;
 		left: 15%;
@@ -887,10 +871,5 @@ body {
 	#nav h3 {
 		font-size: 1.9em;
 	}
-	#nav #code-nav .choice {
-			background: #2B8832 url(../img/oe-code-tiny.png) 110% -1.25em no-repeat;
-	}
-	#nav #books-nav .choice {
-		background: #cf407a url(../img/oe-books-tiny.png) 125% -.25em no-repeat;
-	}
+	
 }
