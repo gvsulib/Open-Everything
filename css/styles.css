@@ -171,7 +171,7 @@ article {
 	max-width: 65.5em;
 	margin: auto;
 }
-article#footer {
+article.footer {
 	max-width: none;
 }
 .true-story h2 {
