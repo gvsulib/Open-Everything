@@ -171,6 +171,9 @@ article {
 	max-width: 65.5em;
 	margin: auto;
 }
+article#footer {
+	max-width: none;
+}
 .true-story h2 {
 	font-weight: normal;
 	font-size: 1.5em;
@@ -883,6 +886,12 @@ body {
 }
 
 @media screen and (min-width:63.5em) {
+	#nav {
+		padding-bottom: 0;
+	}
+	#nav ul {
+		display: block !important;
+	}
 	#nav h2 {
 		float: left;
 		padding-top: .9em;
@@ -901,10 +910,15 @@ body {
 	}
 	nav li a {
     	padding: 1em;
+    	width: auto;
+    	border-top: none;
+	}
+	nav li a.button {
+		margin-left: 0;
 	}
 	body {
-	padding-top: 2.5em;
-}
+		padding-top: 2.5em;
+	}
 }
 
 @media screen and (min-width:76.5625em) {
