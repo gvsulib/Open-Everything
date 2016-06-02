@@ -144,7 +144,7 @@ $(document).ready(function() {
 	slowScroll('#code a.nextpanel', 'books');
 	slowScroll('#books a.nextpanel', 'data');
 	slowScroll('#data a.nextpanel', 'whatdoyouthink');
-	slowScroll('#intro a.nextpanel', 'nav-heading');
+	slowScroll('#intro a.nextpanel', 'access');
 	slowScroll('#moreresources a.nextpanel', 'exhibit');
 	slowScroll('#whatdoyouthink a.nextpanel', 'moreresources');
 	slowScroll('#nav #access-nav a', 'access');
