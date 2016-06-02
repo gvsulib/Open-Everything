@@ -14,6 +14,18 @@ $(document).ready(function() {
 	
 	console.log(isKindle);
 
+	// Set up navigation on small screens
+	if($('#nav ul li').css('float') == 'none') { // small screen
+
+		$('#nav ul').hide(); // Hide Nav
+		$('body').css('padding-top','2.5em');
+		$('#nav h2').css('cursor','pointer').click(function() {
+			$('#nav ul').slideToggle(400);
+		});
+
+
+	}
+
 	// Show answers when clicked
 	$(".span2 .choice").click(function(e) {
 		e.preventDefault();
