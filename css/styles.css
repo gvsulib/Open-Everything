@@ -902,6 +902,9 @@ body {
 	nav li a {
     	padding: 1em;
 	}
+	body {
+	padding-top: 16.875em;
+}
 }
 
 @media screen and (min-width:76.5625em) {
