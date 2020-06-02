@@ -140,6 +140,7 @@ $(document).ready(function() {
 	  };
 	
 	// Apply slow scrolling function
+	/*
 	slowScroll('#access a.nextpanel', 'code');
 	slowScroll('#code a.nextpanel', 'books');
 	slowScroll('#books a.nextpanel', 'data');
@@ -152,7 +153,7 @@ $(document).ready(function() {
 	slowScroll('#nav #code-nav a', 'code');
 	slowScroll('#nav #data-nav a', 'data');
 	slowScroll('#nav .secondary-links a#aboutlink', 'exhibit');
-	
+	*/
 	
 	
 	function slowScroll(trigger, destination) {
